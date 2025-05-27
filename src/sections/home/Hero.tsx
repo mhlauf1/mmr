@@ -23,14 +23,13 @@ const Hero = () => {
   return (
     <section className="h-[95vh] ">
       <div className="relative  pt-20 h-full">
-        <div className="absolute inset-0 bg-[#3E3E3E]/60"></div>
         <div className="absolute inset-0">
           <Image
-            src="/mmr-bg_1.png"
+            src="/mmr-bg.png"
             alt="New York City skyline with Empire State Building"
             fill
             priority
-            className="object-cover -z-10 object-top"
+            className="object-cover -z-10"
             quality={100}
             sizes="100vw"
           />

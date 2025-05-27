@@ -27,12 +27,8 @@ const Hero: React.FC = () => {
 
   return (
     <section className="relative h-[95vh] overflow-hidden">
-      {/* Dark overlay */}
-      <div className="absolute inset-0 z-1 bg-[#3E3E3E]/60" />
-
-      {/* Background image */}
       <Image
-        src="/hero-2.jpg"
+        src="/hero-2.png"
         alt="Manufacturing floor"
         fill
         priority
