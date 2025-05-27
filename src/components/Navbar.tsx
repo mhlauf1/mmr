@@ -39,7 +39,8 @@ export default function Navbar() {
           {/* Logo */}
           <Link className="flex flex-1" href="/">
             <Image
-              src={isTransparent ? "/mmr-white-logo.png" : "/mmr-dark-logo.png"}
+              src="/logo.png"
+              className={!isTransparent ? "" : "filter brightness-0 invert"}
               alt="Minnesota Manufacturing Recruiting"
               width={140}
               height={60}
