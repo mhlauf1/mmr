@@ -1,7 +1,23 @@
+import Testimonials from "@/components/Testimonials";
+import Hero from "@/sections/home/Hero";
+import BottomCTA from "@/components/BottomCTA";
+import CTA from "@/sections/home/CTA";
+import FAQ from "@/sections/home/FAQ";
+import JobSeekers from "@/sections/home/JobSeekers";
+import Employees from "@/sections/home/Employees";
+import AdamQuote from "@/sections/home/AdamQuote";
+
 export default function Home() {
   return (
     <main>
-      <h1>Minnesota Manufacturing Recruiting</h1>
+      <Hero />
+      <JobSeekers />
+      <Employees />
+      <AdamQuote />
+      <Testimonials />
+      <CTA />
+      <FAQ />
+      <BottomCTA />
     </main>
   );
 }
