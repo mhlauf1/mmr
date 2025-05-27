@@ -31,8 +31,8 @@ const JobSeekers = () => {
               </span>
             </h2>
             <p className="text-neutral-600 mt-4 text-md md:text-lg">
-              Looking for a career in manufacturing? You've come to the right
-              place. MN MFG Recruiting partners with high-performing
+              Looking for a career in manufacturing? You&#39;ve come to the
+              right place. MN MFG Recruiting partners with high-performing
               manufacturers across the Twin Cities and throughout Minnesota to
               connect exceptional talent with premier opportunities.
             </p>

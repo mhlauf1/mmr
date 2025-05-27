@@ -12,11 +12,11 @@ const Supercharge = () => {
           </span>
         </h2>
         <p className="text-neutral-200 mt-8 text-md md:text-lg">
-          In today's candidate-driven market, finding qualified manufacturing
-          talent requires industry expertise and a specialized approach. As
-          Minnesota's only recruitment firm focused exclusively on
-          manufacturing, we bring the domain knowledge and professional network
-          to help you succeed.
+          In today&#39;s candidate-driven market, finding qualified
+          manufacturing talent requires industry expertise and a specialized
+          approach. As Minnesota&#39;s only recruitment firm focused exclusively
+          on manufacturing, we bring the domain knowledge and professional
+          network to help you succeed.
         </p>
         <p className="text-neutral-200 mt-8 text-md md:text-l">
           We bring honesty, integrity, and transparency to every client and

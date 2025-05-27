@@ -35,7 +35,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
         className="flex flex-col flex-1"
       >
         <p className="text-neutral-700 font-pt-serif tracking-tight leading-[1.4] text-md md:text-3xl">
-          "{quote}"
+          &quot;{quote}&quot;
         </p>
         <div className="mt-6 md:mt-12 flex flex-col text-neutral-600">
           <span className="md:text-xl font-semibold">{position}</span>

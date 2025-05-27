@@ -7,7 +7,6 @@ const BottomCTA: React.FC = () => {
   const [employerName, setEmployerName] = useState("");
   const [employerCompany, setEmployerCompany] = useState("");
   const [employerEmail, setEmployerEmail] = useState("");
-  const [employerMessage, setEmployerMessage] = useState("");
 
   const submitSeeker = (e: React.FormEvent) => {
     e.preventDefault();
@@ -20,8 +19,7 @@ const BottomCTA: React.FC = () => {
       "Employer inquiry:",
       employerName,
       employerCompany,
-      employerEmail,
-      employerMessage
+      employerEmail
     );
   };
 
