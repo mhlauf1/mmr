@@ -22,7 +22,7 @@ const Hero = () => {
   return (
     <section className="h-[95vh] ">
       <div className="relative h-full">
-        <div className="absolute inset-0 bg-[#3E3E3E]/60"></div>
+        <div className="absolute inset-0 z-5 bg-[#3E3E3E]/60"></div>
         <div className="absolute inset-0">
           <Image
             src="/hiring-managers-hero.jpg"
@@ -76,7 +76,7 @@ const Hero = () => {
                   variants={textVariants}
                   className="flex flex-col md:flex-row gap-4 pt-6 md:pt-8"
                 >
-                  <Link className="w-full md:w-auto " href="/services">
+                  <Link className="w-full md:w-auto " href="/contact">
                     <ButtonWhite text="I need help hiring" />
                   </Link>
                 </motion.div>
