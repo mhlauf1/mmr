@@ -53,7 +53,7 @@ export default function FAQ() {
               <div key={idx} className="py-4">
                 <button
                   onClick={() => toggle(idx)}
-                  className="w-full flex items-center  cursor-pointer justify-between focus:outline-none"
+                  className="w-full flex items-center  gap-3 cursor-pointer justify-between focus:outline-none"
                   aria-expanded={isOpen}
                   aria-controls={`faq-${idx}-content`}
                 >

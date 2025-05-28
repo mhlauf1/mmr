@@ -37,25 +37,32 @@ const Hero = () => {
             <div className="flex flex-col justify-center md:flex-3/4">
               <div className="md:max-w-3xl">
                 {/* Heading with subtle left animation */}
-                <Link href="/contact" className="z-10">
+                <Link
+                  href="/contact"
+                  className="z-10 w-full mx-auto flex md:justify-start justify-center"
+                >
                   <button
+                    type="button"
                     className="
       inline-flex items-center whitespace-nowrap
-      md:mb-4 mb-8 tracking-tight font-semibold cursor-pointer
+      mb-4 tracking-tight font-semibold cursor-pointer
       text-sm bg-white/10 backdrop-blur
-      gap-1 px-2 py-1 rounded-full
+      gap-2 md:px-3 md:py-2 rounded-full
       duration-200 hover:text-white hover:shadow-xs
       text-neutral-50
     "
                   >
-                    <span className="whitespace-nowrap">
+                    {/* hidden below md, shown md+ */}
+                    <span className="hidden md:inline whitespace-nowrap">
                       Trusted by manufacturers throughout MN
                     </span>
+
+                    {/* always visible */}
                     <span
                       className="
-        ml-3 inline-flex items-center whitespace-nowrap
+        inline-flex items-center whitespace-nowrap
         bg-white text-[#202023] rounded-full
-        px-2 py-2 md:py-1 gap-1
+        px-3 py-2 md:py-1 gap-1 md:ml-3
       "
                     >
                       Read Client Reviews
@@ -69,7 +76,7 @@ const Hero = () => {
                   initial="hidden"
                   animate="visible"
                   variants={textVariants}
-                  className=" mb-2 md:mb-4 text-center md:text-start max-w-[20ch] mx-auto font-normal title-line-height text-5xl lg:text-7xl text-white tracking-tight"
+                  className=" mb-2 md:mb-4 text-center md:text-start md:max-w-[20ch] mx-auto font-normal leading-[1.2] text-[36px] sm:text-5xl lg:text-7xl text-white tracking-tight"
                 >
                   Connecting Minnesota Manufacturers with
                   <span className="font-pt-serif tracking-tighter italic">
@@ -89,7 +96,7 @@ const Hero = () => {
                 initial="hidden"
                 animate="visible"
                 variants={textVariants}
-                className="mt-6 md:mt-4 text-white text-center md:text-start text-lg md:text-xl"
+                className="mt-6 md:mt-4 text-white text-center md:text-start text-md md:text-xl"
               >
                 Permanent, full-time placement for mid- to senior-level
                 manufacturing roles—no contract staffing, transparent fees, and

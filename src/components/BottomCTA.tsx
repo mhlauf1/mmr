@@ -24,9 +24,9 @@ const BottomCTA: React.FC = () => {
   };
 
   return (
-    <section className="my-12 p-8 md:mx-[6%] grid grid-cols-1 md:grid-cols-2 gap-4">
+    <section className=" mt-8 md:mt-0 md:my-12 md:p-8 md:mx-[6%] grid grid-cols-1 md:grid-cols-2 md:gap-4">
       {/* Right: Employer Form */}
-      <div className="border border-neutral-200 p-8 bg-neutral-900 rounded-xl">
+      <div className="border border-neutral-200 p-8 bg-neutral-900 md:rounded-xl">
         <span className="inline-block text-sm bg-neutral-100 px-3 py-2 rounded-md font-semibold text-neutral-700 mb-4">
           For Employees
         </span>
@@ -70,7 +70,7 @@ const BottomCTA: React.FC = () => {
         </form>
       </div>
       {/* Left: Job Seeker CTA */}
-      <div className="flex flex-col justify-between  p-8 bg-neutral-50 border border-neutral-200 rounded-xl">
+      <div className="flex flex-col justify-between  p-8 bg-neutral-50 border border-neutral-200 md:rounded-xl">
         <div>
           <span className="inline-block text-sm bg-neutral-100 px-3 py-2 rounded-md font-semibold text-neutral-700 mb-4">
             For Job Seekers
