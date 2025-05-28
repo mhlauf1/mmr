@@ -28,7 +28,7 @@ const JobSeekers = () => {
         <div className="flex items-start justify-between flex-1 flex-col">
           <div>
             <span className="text-sm md:text-md bg-neutral-100 px-3 py-2 rounded-md tracking-tight font-semibold text-neutral-600">
-              For Job Seekers
+              Job Seekers
             </span>
             <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl md:max-w-[20ch] tracking-tight text-neutral-800 font-medium leading-tight">
               Launch Your Manufacturing Career

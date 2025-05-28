@@ -39,7 +39,7 @@ const Employees = () => {
           <div className="flex items-start justify-between flex-1 flex-col">
             <div>
               <span className="text-sm md:text-md bg-neutral-50 px-3 py-2 rounded-md tracking-tight font-semibold text-neutral-600">
-                For Employees
+                Hiring Managers
               </span>
               <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl md:max-w-[18ch] tracking-tight text-neutral-800 font-medium leading-tight">
                 Find Top Manufacturing Talent{" "}

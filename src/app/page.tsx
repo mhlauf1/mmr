@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <JobSeekers />
       <Employees />
+      <JobSeekers />
       <AdamQuote />
       <Testimonials />
       <CTA />
