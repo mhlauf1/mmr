@@ -62,7 +62,7 @@ const Hero = () => {
                       className="
         inline-flex items-center whitespace-nowrap
         bg-white text-[#202023] rounded-full
-        px-3 py-2 md:py-1 gap-1 md:ml-3
+        px-3 py-2  gap-1 md:ml-3
       "
                     >
                       Read Client Reviews
