@@ -73,7 +73,7 @@ export default function ContactPage() {
           <h2 className="mt-4 text-2xl  md:text-3xl text-start font-medium text-neutral-800 leading-tight tracking-tight">
             What Can We Help With?
           </h2>
-          <div className="my-6 flex flex-col md:flex-row gap-y-6">
+          <div className="my-6 flex flex-col md:flex-row gap-x-4 gap-y-6">
             <label className="inline-flex  md:text-lg items-center">
               <input
                 type="checkbox"
