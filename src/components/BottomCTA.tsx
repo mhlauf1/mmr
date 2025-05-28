@@ -37,8 +37,8 @@ const BottomCTA: React.FC = () => {
           </span>
         </h2>
         <p className="text-neutral-200 text-lg mb-6">
-          Tell me about your opening and I’ll deliver pre-vetted, mid- to
-          senior-level candidates—backed by a free replacement guarantee.
+          Tell me about your opening and I&apos;ll deliver pre-vetted, mid- to
+          senior-level candidates backed by a free replacement guarantee.
         </p>
         <form onSubmit={submitEmployer} className="space-y-4">
           <input
@@ -63,7 +63,7 @@ const BottomCTA: React.FC = () => {
             placeholder="Email"
             value={employerEmail}
             onChange={(e) => setEmployerEmail(e.target.value)}
-            className="w-full mb-8 md:mb-0 px-4 py-3 border border-neutral-300 bg-white rounded-md focus:outline-none"
+            className="w-full mb-8 md:mb-8 px-4 py-3 border border-neutral-300 bg-white rounded-md focus:outline-none"
           />
 
           <ButtonWhite text="Get in Touch" />
@@ -83,8 +83,8 @@ const BottomCTA: React.FC = () => {
             </span>
           </h2>
           <p className="text-neutral-600 text-lg">
-            Send your resume and I’ll match you to mid- and senior-level roles
-            across Minnesota—entirely free to you.
+            Send your resume and I&apos;ll match you to mid- and senior-level
+            roles across Minnesota entirely free to you.
           </p>
         </div>
 
@@ -96,7 +96,7 @@ const BottomCTA: React.FC = () => {
               placeholder="Your email"
               value={seekerEmail}
               onChange={(e) => setSeekerEmail(e.target.value)}
-              className="flex-1 mb-2 md:mb-0 px-4 py-3 border border-neutral-200 bg-white rounded-md focus:outline-none"
+              className="flex-1 mb-2 md:mb-4 px-4 py-3 border border-neutral-200 bg-white rounded-md focus:outline-none"
             />
             <div>
               <Button text="Email Resume" />
