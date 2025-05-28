@@ -7,6 +7,11 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 
 const NAV_ITEMS = [
+  { label: "Hiring Managers", href: "/hiring-managers" },
+  { label: "Job Seekers", href: "/job-seekers" },
+  { label: "About", href: "/about" },
+];
+const NAV_ITEMS_MOBILE = [
   { label: "Home", href: "/" },
   { label: "Hiring Managers", href: "/hiring-managers" },
   { label: "Job Seekers", href: "/job-seekers" },
@@ -108,7 +113,7 @@ export default function Navbar() {
         } bg-white text-gray-800`}
       >
         <nav className="flex flex-col px-4 pt-4 pb-6 h-[calc(100vh-56px)] space-y-4">
-          {NAV_ITEMS.map((item) => (
+          {NAV_ITEMS_MOBILE.map((item) => (
             <Link
               key={item.href}
               href={item.href}

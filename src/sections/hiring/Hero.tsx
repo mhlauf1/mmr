@@ -30,9 +30,9 @@ const Hero = () => {
             className="object-cover -z-10"
           />
         </div>
-        <div className="relative z-10 h-full flex flex-col justify-center">
-          <div className="flex flex-row px-4 h-[60vh] md:px-[6%]   w-full">
-            <div className="flex flex-col justify-center flex-3/4">
+        <div className="relative z-10 h-full flex flex-col pb-16 md:pb-0 justify-end md:justify-center">
+          <div className="flex flex-row px-4 md:h-[60vh] md:px-[6%]   w-full">
+            <div className="flex flex-col justify-center md:flex-3/4">
               <div className="max-w-3xl">
                 {/* Heading with subtle left animation */}
                 <span className="text-sm md:text-md bg-neutral-100/20 px-3 py-2 rounded-md font-semibold text-white">
@@ -43,7 +43,7 @@ const Hero = () => {
                   initial="hidden"
                   animate="visible"
                   variants={textVariants}
-                  className="text-3xl mb-2 md:mb-4 font-normal mt-7 title-line-height md:text-5xl lg:text-7xl text-white tracking-tight"
+                  className="text-4xl mb-4 font-normal mt-7 title-line-height md:text-5xl lg:text-7xl text-white tracking-tight"
                 >
                   Hire Minnesota&#39;s Best <br />
                   <span className="font-pt-serif tracking-tighter  italic">

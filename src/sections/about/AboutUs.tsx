@@ -53,7 +53,7 @@ const AboutUs = () => {
           <div className=" relative rounded-xl h-full flex justify-end items-center w-full">
             <Image
               src="/about-us-section.jpg"
-              className="max-h-[75vh] w-[33vw] object-cover rounded-lg"
+              className="max-h-[75vh] hidden md:flex w-[33vw] object-cover rounded-lg"
               height={1200}
               width={800}
               alt="Job skeeing"

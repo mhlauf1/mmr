@@ -4,13 +4,13 @@ import Image from "next/image";
 const ServicesBento: React.FC = () => {
   return (
     <section className="flex flex-col items-start py-12 md:py-28 w-full px-4 md:px-[4%]">
-      <div className="flex flex-col md:flex-row gap-8 items-start md:items-stretch w-full">
+      <div className="flex flex-col md:flex-row md:gap-8 items-start md:items-stretch w-full">
         {/* Left column */}
         <div className="flex-1 items-start flex flex-col">
           <span className="text-sm md:text-md bg-neutral-100 px-3 py-2 rounded-md tracking-tight font-semibold text-neutral-600">
             Services
           </span>
-          <h2 className="text-neutral-900 text-3xl font-medium md:text-5xl leading-tight tracking-tight mt-4 mb-6">
+          <h2 className="text-neutral-900 text-3xl font-medium md:text-5xl leading-tight tracking-tight mt-4 md:mt-4 mb-4 md:mb-6">
             What we
             <span className="font-pt-serif text-4xl sm:text-[42px] md:text-[54px] tracking-tighter italic">
               {" "}
@@ -45,8 +45,8 @@ const ServicesBento: React.FC = () => {
       {/* Bento grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mt-12 md:mt-16">
         {/* Box 1: Contingent Search */}
-        <div className="bg-neutral-100 md:p-12 p-4 flex flex-col items-center flex-1 rounded-lg">
-          <h3 className="font-pt-serif text-3xl md:text-[42px] tracking-tighter  mb-2">
+        <div className="bg-neutral-100 md:p-12 p-6 flex flex-col items-center flex-1 rounded-lg">
+          <h3 className="font-pt-serif text-3xl md:text-[42px] tracking-tight md:tracking-tighter  mb-1 md:mb-2">
             Contingent Search
           </h3>
           <p className="text-neutral-600 mt-2 md:max-w-xl md:text-lg text-center leading-relaxed ">
@@ -59,7 +59,7 @@ const ServicesBento: React.FC = () => {
 
         {/* Box 2: Retained Search */}
         <div className="bg-neutral-100 md:p-12 p-4 flex flex-col items-center flex-1 rounded-lg">
-          <h3 className="font-pt-serif text-3xl md:text-[42px] tracking-tighter  mb-2">
+          <h3 className="font-pt-serif text-3xl md:text-[42px] tracking-tight md:tracking-tighter  mb-1 md:mb-2">
             Retained Search
           </h3>
           <p className="text-neutral-600 md:text-lg mt-2 md:max-w-xl text-center leading-relaxed">

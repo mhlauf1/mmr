@@ -34,7 +34,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
         transition={{ duration: 0.3 }}
         className="flex flex-col flex-1"
       >
-        <p className="text-neutral-700 font-pt-serif tracking-tight leading-[1.4] text-xl md:text-3xl">
+        <p className="text-neutral-700 font-pt-serif tracking-tight leading-[1.4] text-lg md:text-3xl">
           &quot;{quote}&quot;
         </p>
         <div className="mt-6 md:mt-12 flex flex-col text-neutral-600">
@@ -78,11 +78,11 @@ const Testimonials: React.FC = () => {
 
   return (
     <section className="px-4 md:px-[6%] bg-[#F7F7F7] py-12 md:py-24  flex flex-col md:flex-row ">
-      <div className="flex flex-col items-start flex-1/3 w-full">
+      <div className="flex flex-col items-center md:items-start md:flex-1/3 w-full">
         <span className="text-sm md:text-md bg-white px-3 py-2 mb-4 rounded-md tracking-tight font-semibold text-neutral-600">
           Testimonials
         </span>
-        <h2 className="text-3xl capitalize md:max-w-[15ch]  leading-tight sm:text-4xl md:text-5xl tracking-tight">
+        <h2 className="text-3xl capitalize md:max-w-[15ch] text-center md:text-start leading-tight sm:text-4xl md:text-5xl tracking-tight">
           Trusted by hundreds of{" "}
           <span className="font-pt-serif text-4xl sm:text-[42px] md:text-[54px] tracking-tighter italic">
             manufacturing professionals

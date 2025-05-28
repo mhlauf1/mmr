@@ -27,8 +27,8 @@ const Hero: React.FC = () => {
       />
 
       {/* Content wrapper */}
-      <div className="relative z-10 flex flex-col justify-center h-full px-4 md:px-[6%]">
-        <div className="max-w-3xl flex-col justify-between">
+      <div className="relative z-10 flex flex-col justify-end pb-16 md:pb-0 md:justify-center h-full px-4 md:px-[6%]">
+        <div className="md:max-w-3xl flex-col justify-between">
           <div>
             <span className="text-sm md:text-md bg-neutral-100/20 px-3 py-2 rounded-md font-semibold text-white">
               About Us

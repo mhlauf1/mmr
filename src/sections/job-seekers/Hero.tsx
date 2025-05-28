@@ -35,8 +35,8 @@ const Hero: React.FC = () => {
       />
 
       {/* Content wrapper */}
-      <div className="relative z-10 flex flex-col justify-center h-full px-4 md:px-[6%]">
-        <div className="max-w-3xl flex-col justify-between">
+      <div className="relative z-10 flex flex-col justify-end pb-16 md:pb-0 md:justify-center h-full px-4 md:px-[6%]">
+        <div className="md:max-w-3xl flex-col justify-between">
           <div>
             <span className="text-sm md:text-md bg-neutral-100/20 px-3 py-2 rounded-md font-semibold text-white">
               Job Seekers
@@ -47,7 +47,7 @@ const Hero: React.FC = () => {
               initial="hidden"
               animate="visible"
               variants={textVariants}
-              className="mt-4 text-3xl md:text-5xl lg:text-7xl font-normal text-white tracking-tight"
+              className="mt-4 text-4xl md:text-5xl lg:text-7xl font-normal text-white tracking-tight"
             >
               Looking for a career <br />
               <span className="font-pt-serif tracking-tighter italic">
@@ -82,7 +82,7 @@ const Hero: React.FC = () => {
               initial="hidden"
               animate="visible"
               variants={textVariants}
-              className="mt-4 text-white text-md md:text-xl"
+              className="mt-4 hidden md:flex text-white text-md md:text-xl"
             >
               We know how important communication is during your job
               search—that&#39;s why it&#39;s our top priority. We guarantee that
@@ -93,14 +93,17 @@ const Hero: React.FC = () => {
             <p className="text-white/90 text-md md:text-lg">
               Send us your resume to begin your job search today!
             </p>
-            <form className="flex gap-3 max-w-lg" onSubmit={handleSubmit}>
+            <form
+              className="flex flex-col md:flex-row gap-3 max-w-lg"
+              onSubmit={handleSubmit}
+            >
               <input
                 type="email"
                 required
                 placeholder="Enter your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 px-4 py-3 rounded-full bg-white text-neutral-800 placeholder-neutral-500 focus:outline-none"
+                className="flex-1  px-4 py-3 rounded-full bg-white text-neutral-800 placeholder-neutral-500 focus:outline-none"
               />
               <Button text="Email your resume" />
             </form>

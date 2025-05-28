@@ -16,16 +16,17 @@ const contentData = [
 
 const JobSeekers = () => {
   return (
-    <section className="flex border-t border-neutral-100  bg-[#FCFCFC] flex-col py-12 md:py-24 px-4 md:px-[6%]">
-      <div className="flex justify-between md:max-w-[90vw] md:min-h-[60vh] w-full mx-auto flex-col md:flex-row gap-16">
-        <div className="flex items-start justify-between flex-1 flex-col">
+    <section className="flex flex-col border-t border-neutral-100 bg-[#FCFCFC] py-12 md:py-24 px-4 md:px-[6%]">
+      <div className="flex flex-col md:flex-row justify-between md:max-w-[90vw] md:min-h-[60vh] w-full mx-auto gap-8 md:gap-16">
+        {/* Text Content */}
+        <div className="flex-1 flex flex-col justify-between">
           <div>
-            <span className="text-sm md:text-md bg-neutral-100 px-3 py-2 rounded-md tracking-tight font-semibold text-neutral-600">
+            <span className="text-sm md:text-md bg-neutral-100 px-3 py-2 rounded-md font-semibold text-neutral-600">
               Minnesota Manufacturing Recruiting
             </span>
-            <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl md:max-w-[20ch] tracking-tight text-neutral-800 font-medium leading-tight">
+            <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl max-w-[20ch] font-medium text-neutral-800 leading-tight">
               We identify the best
-              <span className="font-pt-serif text-4xl sm:text-[42px] md:text-[54px] tracking-tighter italic">
+              <span className="font-pt-serif text-4xl sm:text-[42px] md:text-[54px] italic tracking-tighter">
                 {" "}
                 opportunities for you.
               </span>
@@ -36,35 +37,34 @@ const JobSeekers = () => {
               manufacturers across the Twin Cities and throughout Minnesota to
               connect exceptional talent with premier opportunities.
             </p>
-            <div className="flex mt-8 flex-col gap-8">
+            <div className="mt-8 flex flex-col gap-8">
               {contentData.map((item) => (
-                <div key={item.id} className="flex  flex-col gap-1">
+                <div key={item.id} className="flex flex-col gap-1">
                   <h4 className="text-neutral-900 font-medium text-lg md:text-xl">
                     {item.title}
                   </h4>
-                  <p className="text-neutral-600  text-md md:text-lg">
+                  <p className="text-neutral-600 text-md md:text-lg">
                     {item.text}
                   </p>
                 </div>
               ))}
             </div>
           </div>
-          <p className="text-neutral-800 mt-16 md:max-w-xl text-md md:text-lg">
+          <p className="text-neutral-800 mt-8 md:mt-16 md:max-w-xl text-md md:text-lg">
             Ready to take the next step?{" "}
             <span className="underline">Send us your resume today.</span>
           </p>
         </div>
-        <div className="flex flex-1">
-          <div className=" relative rounded-xl  flex justify-center items-center w-full">
+
+        {/* Image */}
+        <div className="flex-1">
+          <div className="relative w-full h-64 md:h-auto md:min-h-[65vh] rounded-xl overflow-hidden bg-[#EEF5FD]">
             <Image
               src="/hiring-hero.png"
-              className="object-cover rounded-lg object-center"
+              alt="Job seeking"
               fill
-              alt="Job skeeing"
+              className="object-cover object-center"
             />
-            {/*   <div className="w-[1px] absolute top-0 right-[25%] h-full bg-white"></div>
-            <div className="absolute top-36 right-[25%] left-0 h-[1px] bg-white"></div>
-            <div className="absolute bottom-16 right-0 left-[75%] h-[1px] bg-white"></div> */}
           </div>
         </div>
       </div>

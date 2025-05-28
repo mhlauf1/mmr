@@ -51,7 +51,7 @@ const CandidateBenefits: React.FC = () => {
           Rely on MNMR
         </span>
       </h2>
-      <p className="text-neutral-600 mt-4 text-md  text-start md:text-lg">
+      <p className="text-neutral-600 mt-4 text-md max-w-[36ch] text-start md:text-lg">
         Discover the benefits of partnering with a recruitment specialist who
         puts your career first.
       </p>
