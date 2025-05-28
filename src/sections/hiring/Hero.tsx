@@ -27,10 +27,7 @@ const Hero = () => {
             src="/hiring-managers-hero.png"
             alt="New York City skyline with Empire State Building"
             fill
-            priority
             className="object-cover -z-10"
-            quality={100}
-            sizes="100vw"
           />
         </div>
         <div className="relative z-10 h-full flex flex-col justify-center">

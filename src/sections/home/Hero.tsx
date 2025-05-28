@@ -25,13 +25,10 @@ const Hero = () => {
       <div className="relative  pt-20 h-full">
         <div className="absolute inset-0">
           <Image
-            src="/mmr-bg-1.png"
+            src="/mmr-bg.jpg"
             alt="New York City skyline with Empire State Building"
             fill
-            priority
             className="object-cover -z-10"
-            quality={100}
-            sizes="100vw"
           />
         </div>
 

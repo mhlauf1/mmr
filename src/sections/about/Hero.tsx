@@ -23,10 +23,7 @@ const Hero: React.FC = () => {
         src="/about-hero.png"
         alt="Manufacturing floor"
         fill
-        priority
         className="object-cover object-top"
-        quality={100}
-        sizes="100vw"
       />
 
       {/* Content wrapper */}

@@ -28,13 +28,10 @@ const Hero: React.FC = () => {
   return (
     <section className="relative h-[95vh] overflow-hidden">
       <Image
-        src="/hero-2.png"
+        src="/hero-2.jpg"
         alt="Manufacturing floor"
         fill
-        priority
         className="object-cover object-top"
-        quality={100}
-        sizes="100vw"
       />
 
       {/* Content wrapper */}
