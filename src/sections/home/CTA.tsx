@@ -3,10 +3,10 @@ import { Button } from "@/components/Buttons";
 
 const CTA = () => {
   return (
-    <section className="bg-[#202023] relative h-[60vh] py-12 md:py-0 md:h-[75vh]">
+    <section className="bg-[#202023] relative h-[60vh] py-16 md:py-0 md:h-[75vh]">
       <div className="px-4 sm:px-8 h-full justify-center py-8 items-center flex flex-col">
         <div className="flex flex-col md:mt-auto  items-center">
-          <h2 className="text-4xl sm:text-5xl max-w-lg md:max-w-xl text-white md:text-7xl font-medium tracking-tight text-center">
+          <h2 className="text-3xl sm:text-5xl max-w-[15ch] md:max-w-xl text-white md:text-7xl font-medium tracking-tight text-center">
             Find the perfect hire for
             <span className="font-pt-serif tracking-tighter italic">
               {" "}
