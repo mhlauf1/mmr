@@ -11,20 +11,17 @@ const NAV_ITEMS = [
   { label: "Job Seekers", href: "/job-seekers" },
   { label: "About", href: "/about" },
 ];
-const NAV_ITEMS_MOBILE = [
-  { label: "Home", href: "/" },
-  { label: "Hiring Managers", href: "/hiring-managers" },
-  { label: "Job Seekers", href: "/job-seekers" },
-  { label: "About", href: "/about" },
-];
+const NAV_ITEMS_MOBILE = [{ label: "Home", href: "/" }, ...NAV_ITEMS];
 
 export default function Navbar() {
   const pathname = usePathname();
-  const isHome =
-    pathname === "/" ||
-    pathname === "/job-seekers" ||
-    "/hiring-managers" ||
-    "/about";
+  const onContact = pathname === "/contact";
+
+  // Only track scroll on “home”-type pages
+  const isHome = ["/", "/job-seekers", "/hiring-managers", "/about"].includes(
+    pathname
+  );
+
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -35,12 +32,16 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [isHome]);
 
+  // Transparent if on a “home” page AND not scrolled
   const isTransparent = isHome && !scrolled;
+
+  // Force dark text on Contact
+  const useDarkText = onContact || !isTransparent || menuOpen;
 
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-colors duration-200 ${
-        menuOpen || !isTransparent
+        useDarkText
           ? "bg-white text-gray-800 shadow-sm"
           : "bg-transparent text-white"
       }`}
@@ -55,7 +56,8 @@ export default function Navbar() {
               width={140}
               height={60}
               className={
-                isTransparent && !menuOpen ? "filter brightness-0 invert" : ""
+                // invert logo only when transparent *and* not on Contact
+                !useDarkText ? "filter brightness-0 invert" : ""
               }
             />
           </Link>
@@ -73,15 +75,15 @@ export default function Navbar() {
             ))}
           </div>
 
-          {/* Desktop contact button */}
+          {/* Desktop “Contact” button */}
           <div className="hidden md:flex">
             <Link href="/contact">
               <button
                 type="button"
-                className={`px-5 py-3 rounded-full border border-neutral-200/20 text-sm flex items-center gap-2 transition-colors duration-200 ${
-                  menuOpen || !isTransparent
+                className={`px-5 py-3 rounded-full border text-sm flex items-center gap-2 transition-colors duration-200 ${
+                  useDarkText
                     ? "bg-neutral-800 text-white hover:bg-neutral-700"
-                    : "bg-[#FCFCFC]/10 text-neutral-100 hover:bg-white"
+                    : "bg-[#FCFCFC]/10 text-neutral-100 hover:bg-white hover:text-neutral-700"
                 }`}
               >
                 Contact
@@ -93,16 +95,16 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               type="button"
-              onClick={() => setMenuOpen(!menuOpen)}
+              onClick={() => setMenuOpen((o) => !o)}
               aria-label={menuOpen ? "Close menu" : "Open menu"}
               className="p-2"
             >
               {menuOpen ? (
-                <X size={24} className="text-gray-800" />
+                <X size={32} className="text-gray-800" />
               ) : (
                 <Menu
-                  size={24}
-                  className={isTransparent ? "text-white" : "text-gray-800"}
+                  size={32}
+                  className={useDarkText ? "text-gray-800" : "text-white"}
                 />
               )}
             </button>
@@ -110,7 +112,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu content slides below, full screen */}
+      {/* Mobile menu */}
       <div
         className={`md:hidden overflow-hidden transition-[max-height] duration-300 ${
           menuOpen ? "max-h-screen" : "max-h-0"
@@ -127,7 +129,6 @@ export default function Navbar() {
               {item.label}
             </Link>
           ))}
-
           <Link href="/contact">
             <button
               type="button"

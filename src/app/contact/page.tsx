@@ -1,7 +1,11 @@
-import React from "react";
+import Hero from "@/sections/contact/Hero";
 
 const page = () => {
-  return <div>contact page work in progress</div>;
+  return (
+    <main>
+      <Hero />
+    </main>
+  );
 };
 
 export default page;
