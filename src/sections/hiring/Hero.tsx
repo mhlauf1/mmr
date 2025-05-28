@@ -36,7 +36,7 @@ const Hero = () => {
               <div className="max-w-3xl">
                 {/* Heading with subtle left animation */}
                 <span className="text-sm md:text-md bg-neutral-100/20 px-3 py-2 rounded-md font-semibold text-white">
-                  For Employeers
+                  For Employees
                 </span>
                 <motion.h1
                   custom={0}
@@ -60,8 +60,8 @@ const Hero = () => {
                 >
                   At Minnesota Manufacturing Recruiting, we&#39;re redefining
                   how hiring managers view their recruiting partners. We go
-                  beyond matching résumés to job descriptions—taking the time to
-                  fully understand the technical requirements of your role,
+                  beyond matching résumés to job descriptions. We take the time
+                  to fully understand the technical requirements of your role,
                   while also recognizing that success depends on more than just
                   hard skills.
                 </motion.p>

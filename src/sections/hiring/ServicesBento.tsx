@@ -51,9 +51,9 @@ const ServicesBento: React.FC = () => {
           </h3>
           <p className="text-neutral-600 mt-2 md:max-w-xl md:text-lg text-center leading-relaxed ">
             Typically used when searching for mid- to senior-level individual
-            contributors or manager roles. No upfront costs—only a placement fee
-            if you hire. Plus an industry-leading free replacement guarantee for
-            true peace of mind.
+            contributors or manager roles. No upfront costs, only a placement
+            fee if you hire. Plus an industry-leading free replacement guarantee
+            for true peace of mind.
           </p>
         </div>
 
