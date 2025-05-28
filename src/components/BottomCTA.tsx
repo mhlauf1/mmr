@@ -30,7 +30,7 @@ const BottomCTA: React.FC = () => {
         <span className="inline-block text-sm bg-neutral-100 px-3 py-2 rounded-md font-semibold text-neutral-700 mb-4">
           For Employees
         </span>
-        <h2 className="text-neutral-100 text-3xl font-medium md:text-5xl leading-tight tracking-tight mb-4">
+        <h2 className="text-neutral-100 text-4xl font-medium md:text-5xl leading-tight tracking-tight mb-4">
           Find Top{" "}
           <span className="font-pt-serif text-4xl sm:text-[42px] md:text-[54px] tracking-tighter italic">
             Manufacturing Talent.
@@ -63,7 +63,7 @@ const BottomCTA: React.FC = () => {
             placeholder="Email"
             value={employerEmail}
             onChange={(e) => setEmployerEmail(e.target.value)}
-            className="w-full px-4 py-3 border border-neutral-300 bg-white rounded-md focus:outline-none"
+            className="w-full mb-8 md:mb-0 px-4 py-3 border border-neutral-300 bg-white rounded-md focus:outline-none"
           />
 
           <ButtonWhite text="Get in Touch" />
@@ -75,7 +75,7 @@ const BottomCTA: React.FC = () => {
           <span className="inline-block text-sm bg-neutral-100 px-3 py-2 rounded-md font-semibold text-neutral-700 mb-4">
             For Job Seekers
           </span>
-          <h2 className="text-neutral-900 text-3xl font-medium md:text-5xl leading-tight tracking-tight mb-4">
+          <h2 className="text-neutral-900 text-4xl font-medium md:text-5xl leading-tight tracking-tight mb-4">
             Start Your
             <span className="font-pt-serif text-4xl sm:text-[42px] md:text-[54px] tracking-tighter italic">
               {" "}
@@ -96,7 +96,7 @@ const BottomCTA: React.FC = () => {
               placeholder="Your email"
               value={seekerEmail}
               onChange={(e) => setSeekerEmail(e.target.value)}
-              className="flex-1 px-4 py-3 border border-neutral-200 bg-white rounded-md focus:outline-none"
+              className="flex-1 mb-2 md:mb-0 px-4 py-3 border border-neutral-200 bg-white rounded-md focus:outline-none"
             />
             <div>
               <Button text="Email Resume" />

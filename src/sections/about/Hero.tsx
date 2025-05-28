@@ -20,7 +20,7 @@ const Hero: React.FC = () => {
   return (
     <section className="relative h-[95vh] overflow-hidden">
       <Image
-        src="/about-hero.png"
+        src="/about-hero.jpg"
         alt="Manufacturing floor"
         fill
         className="object-cover object-top"

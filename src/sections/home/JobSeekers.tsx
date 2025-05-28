@@ -23,16 +23,16 @@ const contentData = [
 
 const JobSeekers = () => {
   return (
-    <section className="flex border-t border-neutral-100  bg-[#FCFCFC] flex-col py-12 md:py-24 px-4 md:px-[6%]">
-      <div className="flex justify-between md:max-w-[90vw] md:min-h-[60vh] w-full mx-auto flex-col md:flex-row gap-16">
-        <div className="flex items-start justify-between flex-1 flex-col">
-          <div>
+    <section className="flex border-t border-neutral-100  bg-[#FCFCFC] flex-col pt-12 md:py-24 px-4 md:px-[6%]">
+      <div className="flex justify-between md:max-w-[90vw] md:min-h-[60vh] w-full mx-auto flex-col md:flex-row gap-8 md:gap-16">
+        <div className="flex md:items-start w-full items-center justify-between flex-1 flex-col">
+          <div className="flex flex-col items-center md:items-start">
             <span className="text-sm md:text-md bg-neutral-100 px-3 py-2 rounded-md tracking-tight font-semibold text-neutral-600">
               Job Seekers
             </span>
-            <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl md:max-w-[20ch] tracking-tight text-neutral-800 font-medium leading-tight">
+            <h2 className="mt-4 text-center md:text-start text-4xl md:text-5xl max-w-[20ch] tracking-tight text-neutral-800 font-medium leading-tight">
               Launch Your Manufacturing Career
-              <span className="font-pt-serif text-4xl sm:text-[42px] md:text-[54px] tracking-tighter italic">
+              <span className="font-pt-serif text-[42px] md:text-[54px] tracking-tighter italic">
                 {" "}
                 in Minnesota
               </span>
@@ -52,7 +52,7 @@ const JobSeekers = () => {
             </div>
           </div>
 
-          <Link href="/" className="mt-12">
+          <Link href="/" className="mt-12 w-full">
             <Button text="Learn More For Job Seekers" />
           </Link>
         </div>

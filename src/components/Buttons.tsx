@@ -1,5 +1,5 @@
 export const Button = ({ text }: { text: string }) => (
-  <button className="text-[#202023] bg-[#68C9FB] font-semibold cursor-pointer tracking-[-.25px] px-6 py-3 rounded-full gap-2  flex items-center group">
+  <button className="text-[#202023] bg-[#68C9FB] font-semibold cursor-pointer w-full md:w-auto  justify-center tracking-[-.25px] px-6 py-4 md:py-3 rounded-full gap-2  flex items-center group">
     {text}
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@ export const Button = ({ text }: { text: string }) => (
 );
 
 export const ButtonWhite = ({ text }: { text: string }) => (
-  <button className="text-[#2C384D] bg-white font-semibold px-6 py-3 cursor-pointer tracking-[-.25px] rounded-full gap-2  flex items-center group">
+  <button className="text-[#2C384D] bg-white font-semibold px-6 py-4 md:py-3 cursor-pointer w-full md:w-auto justify-center  tracking-[-.25px] rounded-full gap-2  flex items-center group">
     {text}
     <svg
       xmlns="http://www.w3.org/2000/svg"

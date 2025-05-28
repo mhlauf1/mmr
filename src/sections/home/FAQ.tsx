@@ -37,7 +37,7 @@ export default function FAQ() {
   const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
 
   return (
-    <section className="px-4 sm:px-6 lg:px-8 pt-12 md:pt-24 ">
+    <section className="px-4 sm:px-6 lg:px-8 pt-20 md:pt-24 ">
       <h2 className="text-3xl md:text-5xl font-medium tracking-tight text-center mb-4 md:mb-6">
         Frequently Asked Questions
       </h2>

@@ -23,7 +23,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
   index,
   total,
 }) => (
-  <div className="bg-[#FCFCFC] border border-neutral-100 flex flex-col rounded-2xl px-12 pb-6 pt-10">
+  <div className="md:bg-[#FCFCFC] md:border border-neutral-100 flex flex-col rounded-2xl md:px-12 pb-6 pt-10">
     {/* Animate only this block */}
     <AnimatePresence mode="wait">
       <motion.div
@@ -34,11 +34,11 @@ const Testimonial: React.FC<TestimonialProps> = ({
         transition={{ duration: 0.3 }}
         className="flex flex-col flex-1"
       >
-        <p className="text-neutral-700 font-pt-serif tracking-tight leading-[1.4] text-md md:text-3xl">
+        <p className="text-neutral-700 font-pt-serif tracking-tight leading-[1.4] text-xl md:text-3xl">
           &quot;{quote}&quot;
         </p>
         <div className="mt-6 md:mt-12 flex flex-col text-neutral-600">
-          <span className="md:text-xl font-semibold">{position}</span>
+          <span className="text-lg md:text-xl font-semibold">{position}</span>
           <span className="md:text-lg leading-tight">{client}</span>
         </div>
       </motion.div>

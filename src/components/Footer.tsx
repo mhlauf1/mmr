@@ -43,18 +43,6 @@ const Footer = () => {
           </a>
         </p>
       </div>
-      <Link className="md:hidden block" href="/">
-        <div className="h-auto w-[100px] md:w-[120px]">
-          <Image
-            src="/brady-footer-logo.png"
-            alt="Brady Digital Consulting Logo"
-            layout="responsive"
-            width={100}
-            height={100}
-            objectFit="cover"
-          />
-        </div>
-      </Link>
     </footer>
   );
 };
