@@ -32,7 +32,7 @@ const CandidateBenefits: React.FC = () => {
       id: 2,
       title: "Exclusive Manufacturing Focus",
       description:
-        "I work only in manufacturing—so I speak your language and know the career paths.",
+        "We work only in manufacturing so we speak your language and know the career paths.",
     },
     {
       id: 3,

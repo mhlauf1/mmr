@@ -5,7 +5,7 @@ const contentData = [
   {
     id: 0,
     title: "Communication You Can Count On",
-    text: "We know how important communication is during your job search—that's why it's our top priority. You'll never be left in the dark, and we're committed to keeping you informed every step of the way. You can count on timely responses to your calls and emails—always.",
+    text: "We know how important communication is during your job search, that's why it's our top priority. You'll never be left in the dark, and we're committed to keeping you informed every step of the way. You can count on timely responses to your calls and emails - always.",
   },
   {
     id: 1,

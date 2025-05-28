@@ -17,7 +17,7 @@ const contentData = [
   {
     id: 2,
     title: "Customer Experience",
-    text: "As a service provider, delivering exceptional customer service is our highest priority, for our clients and the candidates we work with. We recognize that a positive experience is as critical as finding the right candidate. Clear, consistent communication is at the heart of our approach. We keep all parties informed with regular updates, ensuring no one is left in the dark about how the search is progressing. Our team is available around the clock—morning, noon, or night—whenever you need us.",
+    text: "As a service provider, delivering exceptional customer service is our highest priority, for our clients and the candidates we work with. We recognize that a positive experience is as critical as finding the right candidate. Clear, consistent communication is at the heart of our approach. We keep all parties informed with regular updates, ensuring no one is left in the dark about how the search is progressing. Our team is available around the clock whenever you need us.",
   },
 ];
 

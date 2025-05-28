@@ -5,7 +5,7 @@ const contentData = [
   {
     id: 0,
     title: "Share Your Profile",
-    text: "Email your resume and tell me what you’re looking for—role level, specialties (controls, mechanical, process, quality), and preferred locations.",
+    text: "Email your resume and tell me what you’re looking for: role level, specialties (controls, mechanical, process, quality), and preferred locations.",
   },
   {
     id: 1,
@@ -15,7 +15,7 @@ const contentData = [
   {
     id: 2,
     title: "Interview & Land the Job",
-    text: "Get interview prep, salary guidance, and offer negotiation support—so you start strong on Day One.",
+    text: "Get interview prep, salary guidance, and offer negotiation support so you start strong on Day One.",
   },
 ];
 
