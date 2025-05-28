@@ -20,7 +20,11 @@ const NAV_ITEMS_MOBILE = [
 
 export default function Navbar() {
   const pathname = usePathname();
-  const isHome = pathname === "/" || pathname === "/job-seekers";
+  const isHome =
+    pathname === "/" ||
+    pathname === "/job-seekers" ||
+    "/hiring-managers" ||
+    "/about";
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
