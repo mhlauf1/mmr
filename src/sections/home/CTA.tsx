@@ -1,6 +1,5 @@
 import React from "react";
 import { Button } from "@/components/Buttons";
-import Image from "next/image";
 
 const CTA = () => {
   return (
