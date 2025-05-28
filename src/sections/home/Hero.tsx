@@ -99,8 +99,8 @@ const Hero = () => {
                 className="mt-6 md:mt-4 text-white text-center md:text-start text-md md:text-xl"
               >
                 Permanent, full-time placement for mid- to senior-level
-                manufacturing roles—no contract staffing, transparent fees, and
-                backed by a free replacement guarantee.
+                manufacturing roles with no contract staffing or transparent
+                fees, and backed by a free replacement guarantee.
               </motion.p>
               <motion.div
                 custom={2}
