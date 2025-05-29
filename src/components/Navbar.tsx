@@ -49,17 +49,22 @@ export default function Navbar() {
       <div className="px-4 sm:px-6 lg:px-28">
         <div className="flex items-center justify-between p-2">
           {/* Logo */}
-          <Link href="/" className="flex">
+          <Link
+            href="/"
+            className={`flex flex-row items-center gap-[10px]
+            ${!useDarkText ? "filter brightness-0 invert" : ""}
+            `}
+          >
             <Image
-              src="/logo.png"
+              src="/minnesota.svg"
               alt="Minnesota Manufacturing Recruiting"
-              width={140}
-              height={60}
-              className={
-                // invert logo only when transparent *and* not on Contact
-                !useDarkText ? "filter brightness-0 invert" : ""
-              }
+              width={50}
+              height={50}
             />
+            <div className="h-[60px] w-[1px] bg-black"></div>
+            <h3 className="font-pt-serif leading-[1] md:text-base font-semibold text-sm">
+              Minnesota <br /> Manufacturing <br /> Recruiting
+            </h3>
           </Link>
 
           {/* Desktop nav */}

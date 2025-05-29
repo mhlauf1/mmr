@@ -7,17 +7,17 @@ const contentData = [
   {
     id: 0,
     title: "Targeted Sourcing",
-    text: "Tap a vetted network of mid- and senior-level professionals across Minnesota.",
+    text: "Tap into a vetted network of experienced manufacturing professionals across Minnesota.",
   },
   {
     id: 1,
-    title: "Client Screening",
-    text: "Technical assessments and culture-fit interviews ensure only qualified candidates.",
+    title: "Candidate Screening",
+    text: "Evaluated for technical skills and culture fit to ensure only qualified candidates are presented.",
   },
   {
     id: 2,
     title: "Risk-Free Hiring",
-    text: "Transparent fee structure and a free replacement guarantee for total peace of mind.",
+    text: "To ensure you made the right hire, all placements come with a free replacement guarantee.",
   },
 ];
 
@@ -65,7 +65,7 @@ const Employees = () => {
             </div>
 
             <Link href="/" className="mt-12">
-              <Button text="Learn More For Job Seekers" />
+              <Button text="Hiring Managers Can Learn More" />
             </Link>
           </div>
         </div>

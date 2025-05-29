@@ -22,7 +22,7 @@ const Hero = () => {
 
   return (
     <section className="h-[95vh]">
-      <div className="relative  pt-20 h-full">
+      <div className="relative  h-full">
         <div className="absolute inset-0">
           <Image
             src="/mmr-bg.jpg"
@@ -32,25 +32,18 @@ const Hero = () => {
           />
         </div>
 
-        <div className="relative z-10 h-full md:border-t border-white/20 flex flex-col justify-center">
-          <div className="flex flex-row px-4 md:h-[60vh] md:px-[6%]   w-full">
+        <div className="relative z-10 h-full flex flex-col justify-center">
+          <div className="flex flex-row px-4  md:px-[6%]  w-full">
             <div className="flex flex-col justify-center md:flex-3/4">
               <div className="md:max-w-3xl">
                 {/* Heading with subtle left animation */}
                 <Link
-                  href="/contact"
+                  href="#testimonials"
                   className="z-10 w-full mx-auto flex md:justify-start justify-center"
                 >
                   <button
                     type="button"
-                    className="
-      inline-flex items-center whitespace-nowrap
-      mb-4 tracking-tight font-semibold cursor-pointer
-      text-sm bg-white/10 backdrop-blur
-      gap-2 md:px-3 md:py-2 rounded-full
-      duration-200 hover:text-white hover:shadow-xs
-      text-neutral-50
-    "
+                    className="inline-flex items-center whitespace-nowrap mb-4 tracking-tight font-semibold cursor-pointer text-sm bg-white/10 backdrop-blur gap-2 md:px-3 md:py-2 rounded-full duration-200 hover:text-white hover:shadow-xs text-neutral-50"
                   >
                     {/* hidden below md, shown md+ */}
                     <span className="hidden md:inline whitespace-nowrap">
@@ -58,13 +51,7 @@ const Hero = () => {
                     </span>
 
                     {/* always visible */}
-                    <span
-                      className="
-        inline-flex items-center whitespace-nowrap
-        bg-white text-[#202023] rounded-full
-        px-3 py-2  gap-1 md:ml-3
-      "
-                    >
+                    <span className="inline-flex items-center whitespace-nowrap bg-white text-[#202023] rounded-full px-3 py-2  gap-1 md:ml-3">
                       Read Client Reviews
                       <ArrowUpRight size={16} strokeWidth={2} />
                     </span>
@@ -84,46 +71,39 @@ const Hero = () => {
                     Exceptional Talent
                   </span>
                 </motion.h1>
+                <motion.p
+                  custom={1}
+                  initial="hidden"
+                  animate="visible"
+                  variants={textVariants}
+                  className="mt-6 md:mt-4 text-white md:max-w-[50ch] text-center md:text-start text-md md:text-xl"
+                >
+                  Direct hire placement services for manufacturers in Minnesota.
+                  Delivering top-tier leadership and professional level talent —
+                  all backed by our free replacement guarantee.
+                </motion.p>
+                <motion.div
+                  custom={2}
+                  initial="hidden"
+                  animate="visible"
+                  variants={textVariants}
+                  className="flex flex-col justify-center md:justify-start md:flex-row gap-4 pt-8"
+                >
+                  <Link
+                    className="w-full flex  justify-center md:justify-start  md:w-auto"
+                    href="/projects"
+                  >
+                    <Button text="I need help hiring" />
+                  </Link>
+                  <Link
+                    className="w-full flex justify-center md:justify-start md:w-auto "
+                    href="/services"
+                  >
+                    <ButtonWhite text="I’m looking for a job" />
+                  </Link>
+                </motion.div>
               </div>
             </div>
-            <div className="flex flex-col md:border-l border-white/20 md:flex-1/4"></div>
-          </div>
-          <div className="w-full  md:border-t px-4  md:px-[6%] flex flex-row justify-center md:justify-start items-center md:h-[35vh] border-white/20">
-            <div className="flex md:pr-[6%] md:max-w-3xl flex-col">
-              {/* Buttons with subtle left animation */}
-              <motion.p
-                custom={1}
-                initial="hidden"
-                animate="visible"
-                variants={textVariants}
-                className="mt-6 md:mt-4 text-white text-center md:text-start text-md md:text-xl"
-              >
-                Permanent, full-time placement for mid- to senior-level
-                manufacturing roles with no contract staffing or transparent
-                fees, and backed by a free replacement guarantee.
-              </motion.p>
-              <motion.div
-                custom={2}
-                initial="hidden"
-                animate="visible"
-                variants={textVariants}
-                className="flex flex-col justify-center md:justify-start md:flex-row gap-4 pt-8"
-              >
-                <Link
-                  className="w-full flex  justify-center md:justify-start  md:w-auto"
-                  href="/projects"
-                >
-                  <Button text="I need help hiring" />
-                </Link>
-                <Link
-                  className="w-full flex justify-center md:justify-start md:w-auto "
-                  href="/services"
-                >
-                  <ButtonWhite text="I’m looking for a job" />
-                </Link>
-              </motion.div>
-            </div>
-            <div className="bg-white/20 md:h-full w-[1px]"></div>
           </div>
         </div>
         <div className="absolute z-5 text-xs text-neutral-300 bottom-4 right-4 flex flex-col items-end">

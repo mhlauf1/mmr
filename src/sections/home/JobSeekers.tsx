@@ -6,18 +6,18 @@ import Image from "next/image";
 const contentData = [
   {
     id: 0,
-    title: "Streamlined Application",
-    text: "Submit your resume and preferences for fast, personalized feedback. Email your resume to the Principal Recruiter,  Adam Mott at adam@mnmfgrecruiting.com.",
+    title: "Expert Role Matching",
+    text: "Get contacted about opportunities that align with your skills, goals, and preferences.",
   },
   {
     id: 1,
-    title: "Expert Role Matching",
-    text: "Get hand-picked opportunities aligned to your skills, goals, and preferred locations.",
+    title: "Dedicated Candidate Support",
+    text: "Receive interview coaching, offer guidance, and onboarding tips to start strong.",
   },
   {
     id: 2,
-    title: "Dedicated Candidate Support",
-    text: "Receive interview coaching, offer guidance, and onboarding tips to start strong.",
+    title: "Streamlined Application",
+    text: "Submit your resume and preferences. Email your resume to adam@mnmfgrecruiting.com.",
   },
 ];
 
@@ -53,7 +53,7 @@ const JobSeekers = () => {
           </div>
 
           <Link href="/" className="mt-12 w-full">
-            <Button text="Learn More For Job Seekers" />
+            <Button text="Job Seekers Can Learn More" />
           </Link>
         </div>
         <div className="flex flex-1">

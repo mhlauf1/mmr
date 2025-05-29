@@ -5,9 +5,22 @@ const AdamQuote = () => {
   return (
     <section className="px-4 md:px-[6%] mb-12 md:mb-16 mx-auto">
       <div className="rounded-lg  bg-linear-to-r from-[#1f1f20] to-[#1f1f20] via-black relative flex-col   flex items-center justify-center py-12 md:py-20 mt-12 md:mt-16 px-4">
-        <span className="text-sm md:text-md border border-white/10 bg-neutral-800 px-3 py-2 rounded-md tracking-tight font-semibold text-neutral-200">
-          Minnesota Manufacturing Recruiting
-        </span>
+        <div
+          className={`flex flex-row items-center mb-2 gap-[10px]
+            `}
+        >
+          <Image
+            src="/minnesota.svg"
+            alt="Minnesota Manufacturing Recruiting"
+            className="filter brightness-0 invert"
+            width={50}
+            height={50}
+          />
+          <div className="h-[60px] w-[1px] bg-white"></div>
+          <h3 className="font-pt-serif leading-[1] md:text-base text-white font-semibold text-sm">
+            Minnesota <br /> Manufacturing <br /> Recruiting
+          </h3>
+        </div>
         <h3 className="text-white  md:max-w-5xl font-pt-serif tracking-tight px-2 md:px-4 leading-[1.3] mt-6 text-2xl md:text-3xl lg:text-4xl  text-center ">
           “We find highly qualified candidates for your positions that are most
           difficult to fill. Our goal is to find the right long-term fit for

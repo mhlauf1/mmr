@@ -3,7 +3,7 @@ import { Button } from "@/components/Buttons";
 
 const CTA = () => {
   return (
-    <section className="bg-[#202023] relative h-[60vh] py-16 md:py-0 md:h-[75vh]">
+    <section className="bg-[#202023] relative h-[60vh] py-16 md:py-0 md:h-[65vh]">
       <div className="px-4 sm:px-8 h-full justify-center py-8 items-center flex flex-col">
         <div className="flex flex-col md:mt-auto  items-center">
           <h2 className="text-3xl sm:text-5xl max-w-[15ch] md:max-w-xl text-white md:text-7xl font-medium tracking-tight text-center">
@@ -15,18 +15,18 @@ const CTA = () => {
             needs.
           </h2>
           <p className="text-center text-lg md:text-xl md:max-w-2xl mt-6 mb-12 md:mb-8 text-neutral-300">
-            We specialize in full-time, permanent placements and do not work on
-            any contract or contract to hire positions. We recruit for
-            mid-senior level individual contributor and leadership positions.
+            Providing direct hire placement services for Minnesota
+            manufacturers. Delivering top-tier talent, backed by our free
+            replacement guarantee.
           </p>
           <Button text="Get started today" />
         </div>
         <div className="hidden md:flex text-white mt-auto flex-row items-center gap-4">
-          <span>Mid to senior-level placements</span>
+          <span>Leadership placements</span>
           <div className="h-[4px] w-[4px] bg-neutral-200 rounded-full"></div>
-          <span>Twin Cities metro coverage</span>
+          <span>Professional level placements</span>
           <div className="h-[4px] w-[4px] bg-neutral-200 rounded-full"></div>
-          <span>Local talent pool access</span>
+          <span>Local candidate network</span>
         </div>
       </div>
 

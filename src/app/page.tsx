@@ -14,7 +14,9 @@ export default function Home() {
       <Employees />
       <JobSeekers />
       <AdamQuote />
-      <Testimonials />
+      <div id="testimonials">
+        <Testimonials />
+      </div>
       <CTA />
       <FAQ />
       <BottomCTA />

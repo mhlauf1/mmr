@@ -5,29 +5,24 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
   {
-    question: "How long does the hiring process typically take?",
+    question: "How long does the recruitment process typically take?",
     answer:
-      "Our recruitment cycle usually spans 4–6 weeks from initial consultation to offer acceptance, but timelines can vary based on role complexity and client availability.",
+      "Finding the right candidate usually takes between 2-6 weeks, but timelines can vary based on the complexity of the position, the interview timeline, and external factors.",
   },
   {
-    question: "What is the replacement guarantee?",
+    question: "What is the free replacement guarantee?",
     answer:
-      "We offer a 90-day replacement guarantee: if a candidate departs for any reason within that period, we will conduct a new search at no additional fee.",
+      "We offer a 60-day guarantee for contingent searches and a 180-day guarantee for retained searches. If the candidate isn’t the right fit, we’ll find a replacement at no additional cost.",
   },
   {
     question: "What geographic areas are covered?",
     answer:
-      "Services span the Twin Cities metro area and greater Minnesota, with a focus on local talent.",
+      "Services span the greater Twin Cities metro and throughout Minnesota.",
   },
   {
     question: "What makes manufacturing-focused recruitment different?",
     answer:
       "Our team has deep expertise in manufacturing processes, compliance standards, and industry networks, ensuring candidates are both technically skilled and culturally aligned.",
-  },
-  {
-    question: "What are typical placement fees?",
-    answer:
-      "Placement fees typically range from 18% to 25% of the candidate’s first-year salary, depending on search scope and role level.",
   },
 ];
 
@@ -37,7 +32,7 @@ export default function FAQ() {
   const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
 
   return (
-    <section className="px-4 sm:px-6 lg:px-8 pt-20 md:pt-24 ">
+    <section className="px-4 sm:px-6 lg:px-8 pt-20 md:pt-24 mb-8">
       <h2 className="text-3xl md:text-5xl font-medium tracking-tight text-center mb-4 md:mb-6">
         Frequently Asked Questions
       </h2>
