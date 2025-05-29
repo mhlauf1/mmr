@@ -32,7 +32,7 @@ const Hero = () => {
           />
         </div>
 
-        <div className="relative z-10 h-full flex flex-col justify-center">
+        <div className="relative z-10 h-full pt-16 md:pt-0 flex flex-col justify-center">
           <div className="flex flex-row px-4  md:px-[6%]  w-full">
             <div className="flex flex-col justify-center md:flex-3/4">
               <div className="md:max-w-3xl">
