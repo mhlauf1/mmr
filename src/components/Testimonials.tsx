@@ -23,7 +23,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
   index,
   total,
 }) => (
-  <div className="md:bg-[#FCFCFC] md:border border-neutral-100 flex flex-col rounded-2xl md:px-12 pb-6 pt-10">
+  <div className="md:bg-[#FCFCFC] md:border border-neutral-100 flex flex-col rounded-2xl md:px-[4%] lg:px-[5%] pb-6 pt-10">
     {/* Animate only this block */}
     <AnimatePresence mode="wait">
       <motion.div
@@ -38,8 +38,12 @@ const Testimonial: React.FC<TestimonialProps> = ({
           &quot;{quote}&quot;
         </p>
         <div className="mt-6 md:mt-12 flex flex-col text-neutral-600">
-          <span className="text-lg md:text-xl font-semibold">{position}</span>
-          <span className="md:text-lg leading-tight">{client}</span>
+          <span className="text-md md:text-lg lg:text-xl font-semibold">
+            {position}
+          </span>
+          <span className="text-sm md:text-base lg:text-lg leading-tight">
+            {client}
+          </span>
         </div>
       </motion.div>
     </AnimatePresence>
@@ -82,9 +86,9 @@ const Testimonials: React.FC = () => {
         <span className="text-sm md:text-md bg-white px-3 py-2 mb-4 rounded-md tracking-tight font-semibold text-neutral-600">
           Client Testimonials
         </span>
-        <h2 className="text-3xl capitalize md:max-w-[15ch] text-center md:text-start leading-tight sm:text-4xl md:text-5xl tracking-tight">
+        <h2 className=" capitalize md:max-w-[15ch] text-center md:text-start leading-tight text-3xl md:text-4xl lg:text-5xl tracking-tight">
           Trusted by Local{" "}
-          <span className="font-pt-serif text-4xl sm:text-[42px] md:text-[54px] tracking-tighter italic">
+          <span className="font-pt-serif text-[30px] md:text-[40px] lg:text-[52px]  tracking-tight italic">
             Hiring Leaders
           </span>
         </h2>

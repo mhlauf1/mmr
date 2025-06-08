@@ -44,13 +44,13 @@ const HiringManagers = () => {
               <span className="text-sm md:text-md bg-neutral-50 border border-white px-3 py-2 rounded-md font-semibold text-neutral-600">
                 Hiring Managers
               </span>
-              <h2 className="mt-4 text-4xl  md:text-5xl text-center md:text-start max-w-[18ch] font-medium text-neutral-800 leading-tight tracking-tight">
-                Find Top Manufacturing{" "}
-                <span className="font-pt-serif text-[42px] md:text-[54px] italic tracking-tighter">
-                  Talent, Fast
+              <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl text-center md:text-start font-medium text-neutral-800 leading-tight tracking-tight">
+                Find Top Manufacturing Talent,{" "}
+                <span className="font-pt-serif text-[31px] md:text-[40px] lg:text-[52px] italic tracking-tight">
+                  Fast
                 </span>
               </h2>
-              <div className="mt-8 flex flex-col gap-8">
+              <div className="mt-6 flex flex-col gap-6">
                 {contentData.map((item) => (
                   <div key={item.id} className="flex flex-col gap-1">
                     <h4 className="text-neutral-900 font-medium text-lg md:text-xl">

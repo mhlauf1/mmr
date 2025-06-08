@@ -43,7 +43,7 @@ const Hero = () => {
                 >
                   <button
                     type="button"
-                    className="inline-flex items-center whitespace-nowrap mb-4 tracking-tight font-semibold cursor-pointer text-sm bg-white/10 backdrop-blur gap-2 md:px-3 md:py-2 rounded-full duration-200 hover:text-white hover:shadow-xs text-neutral-50"
+                    className="inline-flex items-center whitespace-nowrap mb-8 md:mb-4 tracking-tight font-semibold cursor-pointer text-sm bg-white/10 backdrop-blur gap-2 md:px-3 md:py-2 rounded-full duration-200 hover:text-white hover:shadow-xs text-neutral-50"
                   >
                     {/* hidden below md, shown md+ */}
                     <span className="hidden md:inline whitespace-nowrap">
@@ -63,10 +63,10 @@ const Hero = () => {
                   initial="hidden"
                   animate="visible"
                   variants={textVariants}
-                  className=" mb-2 md:mb-4 text-center md:text-start md:max-w-[20ch] mx-auto font-normal leading-[1.2] text-[36px] sm:text-5xl lg:text-7xl text-white tracking-tight"
+                  className=" mb-2 md:mb-4 text-center md:text-start md:max-w-[20ch] mx-auto font-normal leading-[1.2] text-4xl sm:text-5xl lg:text-7xl text-white tracking-tight"
                 >
                   Connecting Minnesota Manufacturers with
-                  <span className="font-pt-serif tracking-tighter italic">
+                  <span className="font-pt-serif tracking-tight italic">
                     {" "}
                     Exceptional Talent
                   </span>

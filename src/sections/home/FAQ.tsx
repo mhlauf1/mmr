@@ -32,15 +32,15 @@ export default function FAQ() {
   const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
 
   return (
-    <section className="px-4 sm:px-6 lg:px-8 pt-20 md:pt-24 mb-8">
-      <h2 className="text-3xl md:text-5xl font-medium tracking-tight text-center mb-4 md:mb-6">
+    <section className=" px-4 md:px-[4%] lg:px-[5%] pt-16 md:pt-24 mb-8 md:mb-20">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-center mb-4 md:mb-6">
         Frequently Asked Questions
       </h2>
       <p className="text-center text-neutral-600 md:text-lg mb-8">
         Get answers to frequently asked questions about the recruitment process.
       </p>
 
-      <div className="max-w-7xl bg-neutral-100 rounded-xl px-[3%] p-12 mx-auto">
+      <div className="max-w-7xl bg-neutral-50 border border-neutral-100 rounded-xl px-[3%] p-6 md:p-12 mx-auto">
         <div className="divide-y divide-gray-200">
           {faqs.map((item, idx) => {
             const isOpen = openIndex === idx;
