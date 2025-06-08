@@ -73,7 +73,7 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="transition-colors duration-200 hover:text-gray-500"
+                className="transition-colors duration-200 hover:text-gray-300"
               >
                 {item.label}
               </Link>
@@ -85,7 +85,7 @@ export default function Navbar() {
             <Link href="/contact">
               <button
                 type="button"
-                className={`px-5 py-3 rounded-full border text-sm flex items-center gap-2 transition-colors duration-200 ${
+                className={`px-5 py-3 cursor-pointer rounded-full border text-sm flex items-center gap-2 transition-colors duration-200 ${
                   useDarkText
                     ? "bg-neutral-800 text-white hover:bg-neutral-700"
                     : "bg-[#FCFCFC]/10 text-neutral-100 hover:bg-white hover:text-neutral-700"

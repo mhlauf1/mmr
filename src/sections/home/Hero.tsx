@@ -91,13 +91,13 @@ const Hero = () => {
                 >
                   <Link
                     className="w-full flex  justify-center md:justify-start  md:w-auto"
-                    href="/projects"
+                    href="/hiring-managers"
                   >
                     <Button text="I need help hiring" />
                   </Link>
                   <Link
                     className="w-full flex justify-center md:justify-start md:w-auto "
-                    href="/services"
+                    href="/job-seekers"
                   >
                     <ButtonWhite text="I’m looking for a job" />
                   </Link>
