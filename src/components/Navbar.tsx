@@ -46,7 +46,7 @@ export default function Navbar() {
           : "bg-transparent text-white"
       }`}
     >
-      <div className="px-4 sm:px-6 lg:px-28">
+      <div className=" px-4 md:px-[4%] lg:px-[5%]">
         <div className="flex items-center justify-between p-2">
           {/* Logo */}
           <Link

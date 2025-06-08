@@ -21,7 +21,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="h-[95vh]">
+    <section className="h-[90vh] md:h-[95vh]">
       <div className="relative  h-full">
         <div className="absolute inset-0">
           <Image
@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
 
         <div className="relative z-10 h-full pt-16 md:pt-0 flex flex-col justify-center">
-          <div className="flex flex-row px-4  md:px-[6%]  w-full">
+          <div className="flex flex-row px-4 md:px-[4%] lg:px-[5%] w-full">
             <div className="flex flex-col justify-center md:flex-3/4">
               <div className="md:max-w-3xl">
                 {/* Heading with subtle left animation */}

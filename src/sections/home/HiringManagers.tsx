@@ -21,14 +21,14 @@ const contentData = [
   },
 ];
 
-const Employees = () => {
+const HiringManagers = () => {
   return (
     <section className="border-t border-neutral-100 bg-[#F7F7F7]">
-      <div className="flex flex-col py-12 md:py-24 px-4 md:px-[6%]">
-        <div className="flex flex-col-reverse md:flex-row justify-between md:max-w-[90vw] md:min-h-[60vh] w-full mx-auto gap-4 md:gap-10 lg:gap-12">
+      <div className="flex flex-col py-12 md:py-24 px-4 md:px-[4%] lg:px-[5%]">
+        <div className="flex flex-col-reverse md:flex-row justify-between md:max-w-[90vw] md:min-h-[60vh] w-full mx-auto gap-4 md:gap-6 lg:gap-8">
           {/* Image */}
           <div className="w-full md:w-1/2">
-            <div className="bg-[#EEF5FD] relative rounded-xl w-full h-64 md:h-auto md:min-h-[60vh] flex justify-center items-center overflow-hidden">
+            <div className="bg-[#EEF5FD] relative rounded-xl w-full h-64 md:h-full flex-1 md:min-h-[60vh] flex justify-center items-center overflow-hidden">
               <Image
                 src="/2-guys.jpg"
                 alt="Job seeking"
@@ -74,4 +74,4 @@ const Employees = () => {
   );
 };
 
-export default Employees;
+export default HiringManagers;
