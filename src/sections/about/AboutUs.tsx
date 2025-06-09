@@ -1,5 +1,3 @@
-import { Button } from "@/components/Buttons";
-import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
@@ -23,7 +21,7 @@ const contentData = [
 
 const AboutUs = () => {
   return (
-    <section className="flex border-t border-neutral-100  bg-[#FCFCFC] flex-col py-12 md:py-24 px-4 md:px-[6%]">
+    <section className="flex border-t border-neutral-100  bg-[#FCFCFC] flex-col py-12 md:py-24 px-4 md:px-[4%] lg:px-[5%]">
       <div className="flex justify-between md:max-w-[90vw] md:min-h-[60vh] w-full mx-auto flex-col md:flex-row gap-16">
         <div className="flex items-start justify-between flex-1 flex-col">
           <div>
@@ -44,10 +42,6 @@ const AboutUs = () => {
               ))}
             </div>
           </div>
-
-          <Link href="/" className="mt-12">
-            <Button text="Let’s work together" />
-          </Link>
         </div>
         <div className="flex flex-1">
           <div className=" relative rounded-xl h-full flex justify-end items-center w-full">
@@ -58,9 +52,6 @@ const AboutUs = () => {
               width={800}
               alt="Job skeeing"
             />
-            {/*   <div className="w-[1px] absolute top-0 right-[25%] h-full bg-white"></div>
-            <div className="absolute top-36 right-[25%] left-0 h-[1px] bg-white"></div>
-            <div className="absolute bottom-16 right-0 left-[75%] h-[1px] bg-white"></div> */}
           </div>
         </div>
       </div>

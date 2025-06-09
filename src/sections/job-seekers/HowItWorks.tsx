@@ -22,11 +22,11 @@ const contentData = [
 const HowItWorks = () => {
   return (
     <section className="border-t border-neutral-100 bg-[#EEF5FD]">
-      <div className="flex flex-col py-12 md:py-24 px-4 md:px-[6%]">
+      <div className="flex flex-col py-12 md:py-24 px-4 md:px-[4%] lg:px-[5%]">
         <div className="flex flex-col-reverse md:flex-row justify-between md:max-w-[90vw] md:min-h-[60vh] w-full mx-auto gap-16">
           {/* Image */}
-          <div className="flex-1">
-            <div className="relative w-full h-64 md:h-auto md:min-h-[60vh] rounded-xl overflow-hidden bg-[#EEF5FD]">
+          <div className="flex flex-1">
+            <div className="relative w-full h-64 md:h-full md:min-h-[60vh] rounded-xl overflow-hidden bg-[#EEF5FD]">
               <Image
                 src="/2-guys.jpg"
                 alt="Job seeking"
@@ -38,12 +38,12 @@ const HowItWorks = () => {
 
           {/* Content */}
           <div className="flex-1 flex flex-col items-start justify-start">
-            <span className="text-sm md:text-md bg-neutral-50 px-3 py-2 rounded-md font-semibold text-neutral-600">
+            <span className="text-sm md:text-md border border-neutral-100 bg-neutral-50 px-3 py-2 rounded-md font-semibold text-neutral-600">
               How It Works
             </span>
-            <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl md:max-w-[18ch] font-medium text-neutral-800 leading-tight">
+            <h2 className="mt-6 text-3xl sm:text-4xl md:text-5xl md:max-w-[18ch] font-medium text-neutral-800">
               Get Hired in{" "}
-              <span className="block font-pt-serif text-4xl sm:text-[42px] md:text-[54px] italic tracking-tighter">
+              <span className="block font-pt-serif  italic tracking-tight">
                 Three Simple Steps
               </span>
             </h2>

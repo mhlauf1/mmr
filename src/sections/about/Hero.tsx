@@ -27,8 +27,8 @@ const Hero: React.FC = () => {
       />
 
       {/* Content wrapper */}
-      <div className="relative z-10 flex flex-col justify-end pb-16 md:pb-0 md:justify-center h-full px-4 md:px-[6%]">
-        <div className="md:max-w-3xl flex-col justify-between">
+      <div className="relative z-10 flex flex-col  justify-end pb-16 md:pb-0 md:justify-end h-full px-4 md:px-[4%] lg:px-[5%]">
+        <div className="md:max-w-3xl flex-col md:h-[60vh] justify-between">
           <div>
             <span className="text-sm md:text-md bg-neutral-100/20 px-3 py-2 rounded-md font-semibold text-white">
               About Us
@@ -49,7 +49,7 @@ const Hero: React.FC = () => {
               initial="hidden"
               animate="visible"
               variants={textVariants}
-              className="mt-4 text-white text-md md:text-xl"
+              className="mt-4 text-white text-md md:text-lg"
             >
               We specialize in full-time, permanent placements and do not work
               on any contract or contract to hire positions. We recruit for
@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
               initial="hidden"
               animate="visible"
               variants={textVariants}
-              className="mt-4 text-white text-md md:text-xl"
+              className="mt-4 text-white text-md md:text-lg"
             >
               We understand that an impressive interview does not always
               translate to a new hire being the right fit. That&#39;s why we

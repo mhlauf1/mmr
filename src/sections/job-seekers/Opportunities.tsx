@@ -16,7 +16,7 @@ const contentData = [
 
 const JobSeekers = () => {
   return (
-    <section className="flex flex-col border-t border-neutral-100 bg-[#FCFCFC] py-12 md:py-24 px-4 md:px-[6%]">
+    <section className="flex flex-col border-t border-neutral-100 bg-[#FCFCFC] py-12 md:py-24 px-4 md:px-[4%] lg:px-[5%]">
       <div className="flex flex-col md:flex-row justify-between md:max-w-[90vw] md:min-h-[60vh] w-full mx-auto gap-8 md:gap-16">
         {/* Text Content */}
         <div className="flex-1 flex flex-col justify-between">
@@ -24,9 +24,9 @@ const JobSeekers = () => {
             <span className="text-sm md:text-md bg-neutral-100 px-3 py-2 rounded-md font-semibold text-neutral-600">
               Minnesota Manufacturing Recruiting
             </span>
-            <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl max-w-[20ch] font-medium text-neutral-800 leading-tight">
+            <h2 className="mt-6 text-3xl sm:text-4xl md:text-5xl max-w-[20ch] font-medium text-neutral-800 ">
               We identify the best
-              <span className="font-pt-serif text-4xl sm:text-[42px] md:text-[54px] italic tracking-tighter">
+              <span className="font-pt-serif italic tracking-tight">
                 {" "}
                 opportunities for you.
               </span>
@@ -57,8 +57,8 @@ const JobSeekers = () => {
         </div>
 
         {/* Image */}
-        <div className="flex-1">
-          <div className="relative w-full h-64 md:h-auto md:min-h-[65vh] rounded-xl overflow-hidden bg-[#EEF5FD]">
+        <div className="flex flex-1">
+          <div className="relative w-full h-64 md:h-full md:min-h-[65vh] rounded-xl overflow-hidden bg-[#EEF5FD]">
             <Image
               src="/hiring-hero.png"
               alt="Job seeking"

@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
       />
 
       {/* Content wrapper */}
-      <div className="relative z-10 flex flex-col justify-end pb-16 md:pb-0 md:justify-center h-full px-4 md:px-[6%]">
+      <div className="relative z-10 flex flex-col justify-end pb-16 md:pb-0 md:justify-center h-full px-4 md:px-[4%] lg:px-[5%]">
         <div className="md:max-w-3xl flex-col justify-between">
           <div>
             <span className="text-sm md:text-md bg-neutral-100/20 px-3 py-2 rounded-md font-semibold text-white">
@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
               className="mt-4 text-4xl md:text-5xl lg:text-7xl font-normal text-white tracking-tight"
             >
               Looking for a career <br />
-              <span className="font-pt-serif tracking-tighter italic">
+              <span className="font-pt-serif tracking-tight italic">
                 {" "}
                 in manufacturing?
               </span>
@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
               initial="hidden"
               animate="visible"
               variants={textVariants}
-              className="mt-4 text-white text-md md:text-xl"
+              className="mt-4 text-white text-md md:text-lg"
             >
               If you&rsquo;re exploring new opportunities in manufacturing,
               you&rsquo;ve come to the right place. MN MFG Recruiting partners
@@ -75,14 +75,14 @@ const Hero: React.FC = () => {
             initial="hidden"
             animate="visible"
             variants={textVariants}
-            className="mt-8 space-y-6"
+            className="mt-4 space-y-6"
           >
             <motion.p
               custom={1}
               initial="hidden"
               animate="visible"
               variants={textVariants}
-              className="mt-4 hidden md:flex text-white text-md md:text-xl"
+              className="mt-4 hidden md:flex text-white text-md md:text-lg"
             >
               We know how important communication is during your job
               search—that&#39;s why it&#39;s our top priority. We guarantee that

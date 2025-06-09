@@ -23,7 +23,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
   index,
   total,
 }) => (
-  <div className="md:bg-[#FCFCFC] md:border border-neutral-100 flex flex-col rounded-2xl md:px-[4%] lg:px-[5%] pb-6 pt-10">
+  <div className="md:bg-[#FCFCFC] md:border border-neutral-100 flex flex-col rounded-2xl md:px-[4%] lg:px-[5%] md:pb-6 pt-6 md:pt-10">
     {/* Animate only this block */}
     <AnimatePresence mode="wait">
       <motion.div
@@ -81,14 +81,14 @@ const Testimonials: React.FC = () => {
   const { quote, client, position } = testimonialData[index];
 
   return (
-    <section className="px-4 md:px-[6%] bg-[#F7F7F7] py-12 md:py-24  flex flex-col md:flex-row ">
-      <div className="flex flex-col items-center md:items-start md:flex-1/3 w-full">
+    <section className="px-4 md:px-[4%] lg:px-[5%] bg-[#F7F7F7] py-12 md:py-24  flex flex-col md:flex-row ">
+      <div className="flex flex-col items-start md:flex-1/3 w-full">
         <span className="text-sm md:text-md bg-white px-3 py-2 mb-4 rounded-md tracking-tight font-semibold text-neutral-600">
           Client Testimonials
         </span>
         <h2 className=" capitalize md:max-w-[15ch] text-center md:text-start leading-tight text-3xl md:text-4xl lg:text-5xl tracking-tight">
           Trusted by Local{" "}
-          <span className="font-pt-serif text-[30px] md:text-[40px] lg:text-[52px]  tracking-tight italic">
+          <span className="font-pt-serif tracking-tight italic">
             Hiring Leaders
           </span>
         </h2>

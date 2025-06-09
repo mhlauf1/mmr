@@ -27,7 +27,7 @@ const contentData = [
 const Core = () => {
   return (
     <section className="border-t border-neutral-100 bg-neutral-900">
-      <div className="flex flex-col py-12 md:py-28 px-4 md:px-[6%]">
+      <div className="flex flex-col py-12 md:py-28 px-4 md:px-[4%] lg:px-[5%]">
         <div className="flex flex-col-reverse md:flex-row justify-between md:max-w-[90vw] md:min-h-[60vh] w-full mx-auto gap-16">
           {/* Image */}
           <div className="w-full md:w-1/2">
@@ -45,7 +45,7 @@ const Core = () => {
           <div className="w-full md:w-1/2 flex flex-col justify-start">
             <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl md:max-w-[18ch] font-medium text-neutral-100 leading-tight">
               Core Recruiting
-              <span className="block font-pt-serif text-4xl sm:text-[42px] md:text-[54px] italic tracking-tighter">
+              <span className="block font-pt-serif italic tracking-tight">
                 Capabilities
               </span>
             </h2>

@@ -11,10 +11,10 @@ export const BenefitsCard: React.FC<BenefitsCardProps> = ({
 }) => (
   <div className="py-12 px-6 flex-1 bg-[#F7F7F7] rounded-xl flex flex-col items-center text-center">
     {/* {topContent && <>{topContent}</>} */}
-    <h3 className="font-pt-serif text-2xl md:text-4xl tracking-tight">
+    <h3 className="font-pt-serif text-2xl md:text-3xl tracking-tight">
       {title}
     </h3>
-    <p className="mt-3 max-w-[28ch] md:max-w-[32ch] text-md md:text-lg text-neutral-500">
+    <p className="mt-2 md:mt-3  md:max-w-[32ch] text-md md:text-lg text-neutral-600">
       {description}
     </p>
   </div>
@@ -43,10 +43,10 @@ const CandidateBenefits: React.FC = () => {
   ];
 
   return (
-    <section className="px-4 md:px-[6%] flex flex-col items-start pt-16 pb-0 bg-white">
-      <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl md:max-w-[16ch] text-start tracking-tight text-neutral-800 font-medium leading-tight">
+    <section className="px-4 md:px-[4%] lg:px-[5%] flex flex-col items-start pt-16 pb-8 bg-white">
+      <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl md:max-w-[16ch] text-start tracking-tight text-neutral-800 font-medium">
         Why Job Seekers <br />
-        <span className="font-pt-serif text-4xl sm:text-[42px] md:text-[54px] tracking-tighter italic">
+        <span className="font-pt-serif tracking-tight italic">
           {" "}
           Rely on MNMR
         </span>
@@ -55,7 +55,7 @@ const CandidateBenefits: React.FC = () => {
         Discover the benefits of partnering with a recruitment specialist who
         puts your career first.
       </p>
-      <div className="w-full grid grid-cols-1 mt-8 md:grid-cols-3 gap-4">
+      <div className="w-full grid grid-cols-1 mt-4 md:grid-cols-3 gap-4">
         {benefits.map(({ id, title, description }) => (
           <BenefitsCard key={id} title={title} description={description} />
         ))}

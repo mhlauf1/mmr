@@ -25,20 +25,20 @@ const Footer: React.FC = () => (
 
       {/* Center: Links */}
       <nav className="flex-1">
-        <ul className="flex justify-center flex-col lg:flex-row gap-6 lg:gap-8 whitespace-nowrap text-sm text-white/70 hover:text-white">
-          <li>
+        <ul className="flex justify-center flex-col lg:flex-row gap-5 lg:gap-8 whitespace-nowrap">
+          <li className=" text-sm text-white/70 hover:text-white">
             <Link href="/">Home</Link>
           </li>
-          <li>
+          <li className=" text-sm text-white/70 hover:text-white">
             <Link href="/about">For Job Seekers</Link>
           </li>
-          <li>
+          <li className=" text-sm text-white/70 hover:text-white">
             <Link href="/how-it-works">For Employers</Link>
           </li>
-          <li>
+          <li className=" text-sm text-white/70 hover:text-white">
             <Link href="/benefits">About</Link>
           </li>
-          <li>
+          <li className=" text-sm text-white/70 hover:text-white">
             <Link href="/services">Contact</Link>
           </li>
         </ul>
@@ -60,7 +60,7 @@ const Footer: React.FC = () => (
     </div>
 
     <div className="mt-6 border-t border-neutral-500 pt-5">
-      <p className="text-start lg:text-center max-w-[54ch] md:max-w-none text-neutral-400 text-xs md:text-sm">
+      <p className="text-start lg:text-center max-w-[54ch] leading-[1.5] md:max-w-none text-neutral-400 text-xs md:text-sm">
         &copy; Minnesota Manufacturing Recruiting, 2025. All rights reserved.
         Designed and developed by{" "}
         <a

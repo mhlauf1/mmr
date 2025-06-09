@@ -46,7 +46,7 @@ const HiringManagers = () => {
               </span>
               <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl text-center md:text-start font-medium text-neutral-800 leading-tight tracking-tight">
                 Find Top Manufacturing Talent,{" "}
-                <span className="font-pt-serif text-[31px] md:text-[40px] lg:text-[52px] italic tracking-tight">
+                <span className="font-pt-serif  italic tracking-tight">
                   Fast
                 </span>
               </h2>
