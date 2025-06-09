@@ -43,7 +43,7 @@ const Hero = () => {
                 >
                   <button
                     type="button"
-                    className="inline-flex items-center whitespace-nowrap mb-8 md:mb-4 tracking-tight font-semibold cursor-pointer text-sm bg-white/10 backdrop-blur gap-2 md:px-3 md:py-2 rounded-full duration-200 hover:text-white hover:shadow-xs text-neutral-50"
+                    className="inline-flex items-center whitespace-nowrap mb-4 tracking-tight font-semibold cursor-pointer text-sm bg-white/10 backdrop-blur gap-2 md:px-3 md:py-2 rounded-full duration-200 hover:text-white hover:shadow-xs text-neutral-50"
                   >
                     {/* hidden below md, shown md+ */}
                     <span className="hidden md:inline whitespace-nowrap">
@@ -76,10 +76,10 @@ const Hero = () => {
                   initial="hidden"
                   animate="visible"
                   variants={textVariants}
-                  className="mt-6 md:mt-4 text-white md:max-w-[50ch] text-center md:text-start text-md md:text-xl"
+                  className="mt-6 md:mt-4 text-white md:max-w-[50ch] text-center md:text-start text-md md:text-lg"
                 >
                   Direct hire placement services for manufacturers in Minnesota.
-                  Delivering top-tier leadership and professional level talent —
+                  Delivering top-tier leadership and professional level talent,
                   all backed by our free replacement guarantee.
                 </motion.p>
                 <motion.div
