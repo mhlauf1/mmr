@@ -32,11 +32,8 @@ const BottomCTA: React.FC = () => {
         <span className="inline-block text-sm bg-neutral-100 px-3 py-2 rounded-md font-semibold text-neutral-700 mb-8">
           Hiring Managers
         </span>
-        <h2 className="text-neutral-100  text-3xl md:text-4xl lg:text-5xl  leading-tight tracking-tight mb-4">
-          Find Top{" "}
-          <span className="font-pt-serif  tracking-tight italic">
-            Manufacturing Talent.
-          </span>
+        <h2 className="text-neutral-100  text-3xl md:text-4xl lg:text-5xl  leading-tight font-pt-serif  tracking-tight mb-4">
+          Find Top <span className=" italic">Manufacturing Talent.</span>
         </h2>
         <form onSubmit={submitEmployer} className="space-y-4 mt-8">
           <input
@@ -81,12 +78,9 @@ const BottomCTA: React.FC = () => {
           <span className="inline-block text-sm bg-neutral-100 px-3 py-2 rounded-md font-semibold text-neutral-700 mb-8">
             Job Seekers
           </span>
-          <h2 className="text-neutral-900 text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight mb-4">
+          <h2 className="text-neutral-900 text-3xl md:text-4xl lg:text-5xl leading-tight font-pt-serif tracking-tight mb-4">
             Start Your
-            <span className="font-pt-serif ] tracking-tight italic">
-              {" "}
-              Job Search.
-            </span>
+            <span className=" italic"> Job Search.</span>
           </h2>
           <p className="text-neutral-600 text-lg">
             Send your resume and we&apos;ll contact you to learn more about your

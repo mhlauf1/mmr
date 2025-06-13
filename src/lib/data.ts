@@ -14,8 +14,8 @@ export const testimonialData = [
     {
         id: 2,
         quote: "Minnesota Manufacturing Recruiting was an excellent choice as our retained search partner. Adam took the time to thoroughly understand our requirements, and he was fantastic to work with throughout the hiring process. Minnesota Manufacturing Recruiting found us a top tier financially focused manufacturing leader who has and will continue to play a key role in our future growth.",
-        client: "Executive Vice President",
-        position: "Sheet Metal Contract Manufacturer"
+        position: "Executive Vice President",
+        client: "Sheet Metal Contract Manufacturer"
     },
     {
         id: 3,
@@ -30,4 +30,45 @@ export const testimonialData = [
         position: "Vice President of Human Resources"
     },
 
+]
+
+
+
+
+export const hiringTestimonialData = [
+    {
+        id: 0,
+        quote: "Adam is a straightforward, honest recruiter for the employer and the candidate. Both sides benefit from Adam’s open trustworthy communication. I appreciate that he found me a great job and would recommend him for any recruitment needs!",
+        position: "Sr. Operations Manager"
+    },
+    {
+        id: 1,
+        quote: "Adam helped me make a major change to a great company that needed and valued my talent. I feel that Adam matched their needs to my talent perfectly. It was a smooth transition.",
+        position: "Plant Engineering Leader"
+    },
+    {
+        id: 2,
+        quote: "I had a great experience working with Adam! He was very well organized, communicated effectively, and helped me through every step of the process. He did a great job of ensuring that my new role was right for me, and made sure that I had everything that I needed to be successful.",
+        position: "Industrial Automation Sales Engineer"
+    },
+    {
+        id: 3,
+        quote: "Adam literally changed my life! The job he found me aligns perfectly with my dreams and hopes, and the team is so supportive. This experience is helping me grow as an individual, and I couldn't be more grateful for his guidance and support!",
+        position: "JD Edwards Business Analyst"
+    },
+    {
+        id: 4,
+        quote: "Enjoyed working with Adam because he brought a new opportunity that actually aligned with my previous work experience. During the interview process Adam kept me informed on where I stood among other candidates and made an opaque process much more transparent. After 3 weeks on the job I am very happy I made the move because the opportunity turned out to be exactly what was pitched to me on day 1.",
+        position: "Sr. Industrial Automation Account Manager"
+    },
+    {
+        id: 5,
+        quote: "Adam was a great recruiter, he reached out with an amazing opportunity at a really good company. He guided me through the interview process and was my point of contact throughout the entire process. I appreciated the opportunity to connect with him and would recommend him to others.",
+        position: "Sr. Mechanical Design Engineer"
+    },
+    {
+        id: 6,
+        quote: "Adam reached out and set up a phone call to better understand what I was looking for in my next role. During the interview process, he was an excellent communicator, keeping me updated with each step. After placing me into a new position, he made sure to follow up to ensure the position was the right fit for me.",
+        position: "Plant Accountant"
+    },
 ]

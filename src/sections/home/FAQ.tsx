@@ -33,7 +33,7 @@ export default function FAQ() {
 
   return (
     <section className=" px-4 md:px-[4%] lg:px-[5%] pt-16 md:pt-24 mb-8 md:mb-20">
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight text-center mb-4 md:mb-6">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-pt-serif font-medium tracking-tight text-center mb-4 md:mb-6">
         Frequently Asked Questions
       </h2>
       <p className="text-center text-neutral-600 md:text-lg mb-8">

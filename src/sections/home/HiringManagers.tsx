@@ -25,7 +25,7 @@ const HiringManagers = () => {
   return (
     <section className="border-t border-neutral-100 bg-[#F7F7F7]">
       <div className="flex flex-col py-12 md:py-24 px-4 md:px-[4%] lg:px-[5%]">
-        <div className="flex flex-col-reverse md:flex-row justify-between md:max-w-[90vw] md:min-h-[60vh] w-full mx-auto gap-4 md:gap-6 lg:gap-8">
+        <div className="flex flex-col-reverse md:flex-row justify-between md:max-w-[90vw] md:min-h-[60vh] w-full mx-auto gap-4 md:gap-10 lg:gap-12">
           {/* Image */}
           <div className="w-full md:w-1/2">
             <div className="bg-[#EEF5FD] relative rounded-xl w-full h-64 md:h-full flex-1 md:min-h-[60vh] flex justify-center items-center overflow-hidden">
@@ -44,13 +44,11 @@ const HiringManagers = () => {
               <span className="text-sm md:text-md bg-neutral-50 border border-white px-3 py-2 rounded-md font-semibold text-neutral-600">
                 Hiring Managers
               </span>
-              <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl text-center md:text-start font-medium text-neutral-800 leading-tight tracking-tight">
+              <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl text-center md:text-start font-medium text-neutral-800 leading-tight font-pt-serif   tracking-tight">
                 Find Top Manufacturing Talent,{" "}
-                <span className="font-pt-serif  italic tracking-tight">
-                  Fast
-                </span>
+                <span className="italic">Fast</span>
               </h2>
-              <div className="mt-6 flex flex-col gap-6">
+              <div className="mt-8 flex flex-col gap-6">
                 {contentData.map((item) => (
                   <div key={item.id} className="flex flex-col gap-1">
                     <h4 className="text-neutral-900 font-medium text-lg md:text-xl">

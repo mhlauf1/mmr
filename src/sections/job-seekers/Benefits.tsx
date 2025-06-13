@@ -24,38 +24,27 @@ const CandidateBenefits: React.FC = () => {
   const benefits = [
     {
       id: 1,
-      title: "100% Free to You",
-      description:
-        "Employers cover my fee; you never pay to find your next role.",
+      title: "Free for Candidates",
+      description: "Job seekers never pay a fee.",
     },
     {
       id: 2,
-      title: "Exclusive Manufacturing Focus",
-      description:
-        "We work only in manufacturing so we speak your language and know the career paths.",
+      title: "Manufacturing Focus",
+      description: "We recruit for manufactures so we speak your language.",
     },
     {
       id: 3,
       title: "Guaranteed Communication",
-      description:
-        "Never wonder “Where am I in the process?” You’ll get timely updates at every step.",
+      description: "You’ll always receive timely updates and responses.",
     },
   ];
 
   return (
     <section className="px-4 md:px-[4%] lg:px-[5%] flex flex-col items-start pt-16 pb-8 bg-white">
-      <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl md:max-w-[16ch] text-start tracking-tight text-neutral-800 font-medium">
-        Why Job Seekers <br />
-        <span className="font-pt-serif tracking-tight italic">
-          {" "}
-          Rely on MNMR
-        </span>
+      <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl text-start font-pt-serif tracking-tight text-neutral-800 font-medium">
+        Why Job Seekers Rely on Us
       </h2>
-      <p className="text-neutral-600 mt-4 text-md max-w-[36ch] text-start md:text-lg">
-        Discover the benefits of partnering with a recruitment specialist who
-        puts your career first.
-      </p>
-      <div className="w-full grid grid-cols-1 mt-4 md:grid-cols-3 gap-4">
+      <div className="w-full grid grid-cols-1 mt-4 md:mt-8 md:grid-cols-3 gap-4">
         {benefits.map(({ id, title, description }) => (
           <BenefitsCard key={id} title={title} description={description} />
         ))}

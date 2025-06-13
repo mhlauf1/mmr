@@ -47,13 +47,10 @@ const Hero: React.FC = () => {
               initial="hidden"
               animate="visible"
               variants={textVariants}
-              className="mt-4 text-4xl md:text-5xl lg:text-7xl font-normal text-white tracking-tight"
+              className="mt-4 text-4xl md:text-5xl lg:text-7xl font-normal text-white font-pt-serif tracking-tight"
             >
               Looking for a career <br />
-              <span className="font-pt-serif tracking-tight italic">
-                {" "}
-                in manufacturing?
-              </span>
+              <span className=" italic"> in manufacturing?</span>
             </motion.h1>
 
             <motion.p
@@ -77,19 +74,6 @@ const Hero: React.FC = () => {
             variants={textVariants}
             className="mt-4 space-y-6"
           >
-            <motion.p
-              custom={1}
-              initial="hidden"
-              animate="visible"
-              variants={textVariants}
-              className="mt-4 hidden md:flex text-white text-md md:text-lg"
-            >
-              We know how important communication is during your job
-              search—that&#39;s why it&#39;s our top priority. We guarantee that
-              you&#39;ll never be left in the dark, and we&#39;re committed to
-              keeping you informed every step of the way. You can count on
-              timely responses to your calls and emails—always.
-            </motion.p>
             <p className="text-white/90 text-md md:text-lg">
               Send us your resume to begin your job search today!
             </p>

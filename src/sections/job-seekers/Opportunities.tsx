@@ -24,18 +24,13 @@ const JobSeekers = () => {
             <span className="text-sm md:text-md bg-neutral-100 px-3 py-2 rounded-md font-semibold text-neutral-600">
               Minnesota Manufacturing Recruiting
             </span>
-            <h2 className="mt-6 text-3xl sm:text-4xl md:text-5xl max-w-[20ch] font-medium text-neutral-800 ">
+            <h2 className="mt-6 text-3xl sm:text-4xl md:text-5xl md:max-w-[20ch] font-pt-serif tracking-tight font-medium text-neutral-800 ">
               We identify the best
-              <span className="font-pt-serif italic tracking-tight">
-                {" "}
-                opportunities for you.
-              </span>
+              <span className=" italic"> opportunities for you.</span>
             </h2>
             <p className="text-neutral-600 mt-4 text-md md:text-lg">
-              Looking for a career in manufacturing? You&#39;ve come to the
-              right place. MN MFG Recruiting partners with high-performing
-              manufacturers across the Twin Cities and throughout Minnesota to
-              connect exceptional talent with premier opportunities.
+              We partner with manufacturers throughout Minnesota and connect
+              exceptional talent with premier opportunities.
             </p>
             <div className="mt-8 flex flex-col gap-8">
               {contentData.map((item) => (

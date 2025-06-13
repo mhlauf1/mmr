@@ -1,66 +1,98 @@
-import React from "react";
-import Image from "next/image";
+"use client";
+import React, { useState } from "react";
+import { hiringTestimonialData } from "@/lib/data";
+import { ArrowRight, ArrowLeft } from "lucide-react";
+import { AnimatePresence, motion } from "framer-motion";
 
-const contentData = [
-  {
-    id: 0,
-    title: "Share Your Profile",
-    text: "Email your resume and tell me what you’re looking for: role level, specialties (controls, mechanical, process, quality), and preferred locations.",
-  },
-  {
-    id: 1,
-    title: "Receive Hand-Picked Matches",
-    text: "I’ll comb my Minnesota network and surface only roles that fit your experience and goals. You’ll get a tailored shortlist, not a spam list.",
-  },
-  {
-    id: 2,
-    title: "Interview & Land the Job",
-    text: "Get interview prep, salary guidance, and offer negotiation support so you start strong on Day One.",
-  },
-];
+type TestimonialProps = {
+  quote: string;
+  position: string;
+  prev: () => void;
+  next: () => void;
+  index: number;
+  total: number;
+};
 
-const HowItWorks = () => {
-  return (
-    <section className="border-t border-neutral-100 bg-[#EEF5FD]">
-      <div className="flex flex-col py-12 md:py-24 px-4 md:px-[4%] lg:px-[5%]">
-        <div className="flex flex-col-reverse md:flex-row justify-between md:max-w-[90vw] md:min-h-[60vh] w-full mx-auto gap-16">
-          {/* Image */}
-          <div className="flex flex-1">
-            <div className="relative w-full h-64 md:h-full md:min-h-[60vh] rounded-xl overflow-hidden bg-[#EEF5FD]">
-              <Image
-                src="/2-guys.jpg"
-                alt="Job seeking"
-                fill
-                className="object-cover object-center rounded-xl"
-              />
-            </div>
-          </div>
-
-          {/* Content */}
-          <div className="flex-1 flex flex-col items-start justify-start">
-            <span className="text-sm md:text-md border border-neutral-100 bg-neutral-50 px-3 py-2 rounded-md font-semibold text-neutral-600">
-              How It Works
-            </span>
-            <h2 className="mt-6 text-3xl sm:text-4xl md:text-5xl md:max-w-[18ch] font-medium text-neutral-800">
-              Get Hired in{" "}
-              <span className="block font-pt-serif  italic tracking-tight">
-                Three Simple Steps
-              </span>
-            </h2>
-            <div className="mt-8 flex flex-col gap-8">
-              {contentData.map((item) => (
-                <div key={item.id} className="flex flex-col gap-1">
-                  <h4 className="text-neutral-900 font-medium text-lg md:text-xl">
-                    {item.title}
-                  </h4>
-                  <p className="text-neutral-600 text-md md:text-lg">
-                    {item.text}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div>
+const Testimonial: React.FC<TestimonialProps> = ({
+  quote,
+  position,
+  prev,
+  next,
+  index,
+  total,
+}) => (
+  <div className="md:bg-[#FCFCFC] md:border border-neutral-100 flex flex-col rounded-2xl md:px-[4%] lg:px-[5%] md:pb-6 pt-6 md:pt-10">
+    {/* Animate only this block */}
+    <AnimatePresence mode="wait">
+      <motion.div
+        key={index}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.3 }}
+        className="flex flex-col flex-1"
+      >
+        <p className="text-neutral-700 font-pt-serif tracking-tight leading-[1.4] text-2xl md:text-3xl">
+          &quot;{quote}&quot;
+        </p>
+        <div className="mt-6 flex flex-col text-neutral-700">
+          <span className="md:text-lg font-medium">{position}</span>
         </div>
+      </motion.div>
+    </AnimatePresence>
+
+    {/* Static controls at bottom */}
+    <div className="mt-2 flex items-center justify-end gap-4">
+      <button
+        onClick={prev}
+        aria-label="Previous testimonial"
+        className="p-2 rounded-full bg-white border border-neutral-200 hover:border-neutral-300 duration-300"
+      >
+        <ArrowLeft className="text-neutral-600" />
+      </button>
+      <span className="text-neutral-600 font-medium">
+        {index + 1}/{total}
+      </span>
+      <button
+        onClick={next}
+        aria-label="Next testimonial"
+        className="p-2 rounded-full bg-white border border-neutral-200 hover:border-neutral-300 duration-300"
+      >
+        <ArrowRight className="text-neutral-600" />
+      </button>
+    </div>
+  </div>
+);
+
+const HowItWorks: React.FC = () => {
+  const [index, setIndex] = useState(0);
+  const total = hiringTestimonialData.length;
+
+  const prev = () => setIndex((i) => (i - 1 + total) % total);
+  const next = () => setIndex((i) => (i + 1) % total);
+
+  const { quote, position } = hiringTestimonialData[index];
+
+  return (
+    <section className="px-4 md:px-[4%] lg:px-[5%] bg-[#EEF5FD] py-12 md:py-24  flex flex-col md:flex-row ">
+      <div className="flex flex-col items-start md:flex-1/3 w-full">
+        <span className="text-sm md:text-md bg-white px-3 py-2 mb-4 rounded-md tracking-tight font-semibold text-neutral-600">
+          Testimonials
+        </span>
+        <h2 className=" capitalize md:max-w-[15ch] text-center md:text-start leading-tight text-3xl md:text-4xl lg:text-5xl font-pt-serif tracking-tight">
+          Job Seeker Testimonials
+        </h2>
+      </div>
+
+      <div className="w-full md:flex-2/3">
+        <Testimonial
+          quote={quote}
+          position={position}
+          prev={prev}
+          next={next}
+          index={index}
+          total={total}
+        />
       </div>
     </section>
   );

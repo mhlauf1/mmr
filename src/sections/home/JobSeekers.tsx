@@ -30,12 +30,9 @@ const JobSeekers = () => {
             <span className="text-sm md:text-md bg-neutral-100 px-3 py-2 rounded-md tracking-tight font-semibold text-neutral-600">
               Job Seekers
             </span>
-            <h2 className="mt-4 text-center md:text-start text-3xl md:text-4xl lg:text-5xl max-w-[22ch] tracking-tight text-neutral-800 font-medium leading-tight">
+            <h2 className="mt-4 text-center md:text-start text-3xl md:text-4xl lg:text-5xl max-w-[22ch] font-pt-serif  tracking-tight  text-neutral-800 font-medium leading-tight">
               Launch Your Manufacturing Career
-              <span className="font-pt-serif text-[31px] md:text-[40px] lg:text-[52px] tracking-tight italic">
-                {" "}
-                in Minnesota
-              </span>
+              <span className="italic"> in Minnesota</span>
             </h2>
 
             <div className="flex mt-6 flex-col gap-6">

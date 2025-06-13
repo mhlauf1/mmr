@@ -34,7 +34,7 @@ const Testimonial: React.FC<TestimonialProps> = ({
         transition={{ duration: 0.3 }}
         className="flex flex-col flex-1"
       >
-        <p className="text-neutral-700 font-pt-serif tracking-tight leading-[1.4] text-lg md:text-3xl">
+        <p className="text-neutral-700 font-pt-serif tracking-tight leading-[1.4] text-xl md:text-3xl">
           &quot;{quote}&quot;
         </p>
         <div className="mt-6 md:mt-12 flex flex-col text-neutral-600">
@@ -86,11 +86,8 @@ const Testimonials: React.FC = () => {
         <span className="text-sm md:text-md bg-white px-3 py-2 mb-4 rounded-md tracking-tight font-semibold text-neutral-600">
           Client Testimonials
         </span>
-        <h2 className=" capitalize md:max-w-[15ch] text-center md:text-start leading-tight text-3xl md:text-4xl lg:text-5xl tracking-tight">
-          Trusted by Local{" "}
-          <span className="font-pt-serif tracking-tight italic">
-            Hiring Leaders
-          </span>
+        <h2 className=" capitalize md:max-w-[15ch] text-center md:text-start leading-tight text-3xl md:text-4xl lg:text-5xl font-pt-serif tracking-tight">
+          Trusted by Local <span className=" italic">Hiring Leaders</span>
         </h2>
       </div>
 

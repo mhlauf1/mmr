@@ -6,13 +6,9 @@ const CTA = () => {
     <section className="bg-[#111111] relative h-[60vh] py-16 md:py-0 md:h-[65vh]">
       <div className="px-4 md:px-[4%] lg:px-[5%] h-full justify-center py-8 items-center flex flex-col">
         <div className="flex flex-col md:mt-auto  items-center">
-          <h2 className=" text-4xl md:text-5xl max-w-[15ch] md:max-w-xl text-white lg:text-6xl font-medium tracking-tight text-center">
+          <h2 className=" text-4xl md:text-5xl max-w-[15ch] md:max-w-xl text-white lg:text-6xl font-medium font-pt-serif tracking-tight text-center">
             Find the perfect hire for
-            <span className="font-pt-serif tracking-tighter italic">
-              {" "}
-              Your{" "}
-            </span>
-            needs.
+            <span className="italic"> Your needs.</span>
           </h2>
           <p className="text-center text-lg md:text-xl md:max-w-2xl mt-6 mb-12 md:mb-8 text-neutral-300">
             Providing direct hire placement services for Minnesota

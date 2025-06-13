@@ -43,13 +43,10 @@ const Hero = () => {
                   initial="hidden"
                   animate="visible"
                   variants={textVariants}
-                  className="text-4xl mb-4 font-normal mt-7 title-line-height md:text-5xl lg:text-7xl text-white tracking-tight"
+                  className="text-4xl mb-4 font-normal mt-7 font-pt-serif title-line-height md:text-5xl lg:text-7xl text-white tracking-tight"
                 >
                   Hire Minnesota&#39;s Best <br />
-                  <span className="font-pt-serif tracking-tighter  italic">
-                    {" "}
-                    Manufacturing Talent
-                  </span>
+                  <span className="  italic"> Manufacturing Talent</span>
                 </motion.h1>
                 <motion.p
                   custom={1}
