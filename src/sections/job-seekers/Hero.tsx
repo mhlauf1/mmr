@@ -89,7 +89,7 @@ const Hero: React.FC = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 className="flex-1  px-4 py-3 rounded-full bg-white text-neutral-800 placeholder-neutral-500 focus:outline-none"
               />
-              <Button text="Email Your Resume" />
+              <Button text="Get in Touch" />
             </form>
           </motion.div>
         </div>

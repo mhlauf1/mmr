@@ -29,10 +29,11 @@ const ServicesBento: React.FC = () => {
             Contingent Search
           </h3>
           <p className="text-neutral-700 mt-1 md:text-lg text-start leading-relaxed ">
-            A portion of the fee is paid upfront with the remaining balance is
-            due after successful placement of the candidate. Should be changed
-            to A portion of the fee is paid up front with the remaining balance
-            due after a candidate is successfully placed.
+            Typically used when searching for professional level individual
+            contributors or manager level employees. No upfront costs and a fee
+            is only paid if we find the candidate you hire. Plus, we offer a
+            free replacement guarantee to ensure peace of mind with each
+            placement.
           </p>
         </div>
 
@@ -43,9 +44,9 @@ const ServicesBento: React.FC = () => {
           </h3>
           <p className="text-neutral-700 md:text-lg mt-1 text-start leading-relaxed">
             Typically used for director, VP, and executive level searches. A
-            portion of the fee is paid upfront with the remaining balance is due
-            after successful placement of the candidate. We offer an extended
-            free replacement guarantee to ensure the right leader is at your
+            portion of the fee is paid up front with the remaining balance due
+            after a candidate is successfully placed. We offer an extended free
+            replacement guarantee to ensure the right leader is at your
             organization.
           </p>
         </div>

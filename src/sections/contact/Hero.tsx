@@ -161,7 +161,7 @@ export default function ContactPage() {
                 {/* styled label as button */}
                 <label
                   htmlFor="resume-upload"
-                  className="mt-2
+                  className="
             inline-block
         bg-white
                   hover:bg-neutral-50

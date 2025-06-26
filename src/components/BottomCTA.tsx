@@ -160,7 +160,7 @@ const BottomCTA: React.FC = () => {
                 htmlFor="resume-upload"
                 className="
                   inline-block
-                  mt-2
+                 
                   bg-white
                   hover:bg-neutral-50
                   text-neutral-800
