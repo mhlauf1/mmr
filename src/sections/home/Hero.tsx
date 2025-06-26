@@ -44,7 +44,7 @@ const Hero = () => {
                 >
                   <button
                     type="button"
-                    className="inline-flex items-center whitespace-nowrap mb-4 tracking-tight font-semibold cursor-pointer text-sm bg-white/10 backdrop-blur gap-2 md:px-3 md:py-2 rounded-full duration-200 hover:text-white hover:shadow-xs text-neutral-50"
+                    className="inline-flex items-center whitespace-nowrap mb-5 tracking-tight font-semibold cursor-pointer text-sm bg-white/10 backdrop-blur gap-2 md:px-3 md:py-2 rounded-full duration-200 hover:text-white hover:shadow-xs text-neutral-50"
                   >
                     {/* hidden below md, shown md+ */}
                     <span className="hidden md:inline whitespace-nowrap">

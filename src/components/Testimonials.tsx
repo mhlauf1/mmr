@@ -86,7 +86,7 @@ const Testimonials: React.FC = () => {
         <span className="text-sm md:text-md bg-white px-3 py-2 mb-4 rounded-md tracking-tight font-semibold text-neutral-600">
           Client Testimonials
         </span>
-        <h2 className=" capitalize md:max-w-[15ch] text-center md:text-start leading-tight text-3xl md:text-4xl lg:text-5xl font-pt-serif tracking-tight">
+        <h2 className=" capitalize md:max-w-[15ch] text-start leading-tight text-3xl md:text-4xl lg:text-5xl font-pt-serif tracking-tight">
           Trusted by Local <span className=" italic">Hiring Leaders</span>
         </h2>
       </div>
