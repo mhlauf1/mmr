@@ -11,6 +11,9 @@ export default function ContactPage() {
   const [helpJob, setHelpJob] = useState(false);
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [extraText, setExtraText] = useState("");
+  const [resumeFile, setResumeFile] = useState<File | null>(null);
 
   const textVariants = {
     hidden: { opacity: 0, x: -10 },
@@ -41,18 +44,21 @@ export default function ContactPage() {
       alert("Please select whether you need help hiring or looking for a job.");
       return;
     }
-    // All inputs are required via their required attributes
-    // TODO: wire up submission (e.g., send to API)
-    console.log({ helpHiring, helpJob, fullName, email });
+    console.log({
+      helpHiring,
+      helpJob,
+      fullName,
+      email,
+      phoneNumber,
+      extraText,
+      resumeFile,
+    });
   };
 
   return (
-    <div className="px-4 py-[15vh] md:px-[6%] md:flex md:space-x-12">
+    <div className="px-4 py-[15vh] pb-[7vh]  md:px-[6%] md:flex md:space-x-12">
       {/* Left column */}
       <div className="md:w-1/2">
-        <span className="text-sm md:text-md bg-neutral-100 px-3 py-2 rounded-md font-semibold text-neutral-600">
-          Get in touch
-        </span>
         <motion.h1
           custom={0}
           initial="hidden"
@@ -61,40 +67,18 @@ export default function ContactPage() {
           className="text-4xl mb-4 font-normal mt-6 title-line-height md:text-5xl text-neutral-900 tracking-tight"
         >
           <span className="font-pt-serif tracking-tight italic">
-            Contact Us
+            What Can We Help With?
           </span>
         </motion.h1>
-
-        <ul className="mt-6 space-y-3">
-          <li className="flex items-center gap-3">
-            <FaMapPin size={20} />
-            <span className="text-neutral-600">
-              710 N 4th Street, Minneapolis, MN 55401
-            </span>
-          </li>
-          <li className="flex items-center gap-3">
-            <MdEmail size={20} />
-            <span className="text-neutral-600">Adam@MNmfgRecruiting.com</span>
-          </li>
-          <li className="flex items-center gap-3">
-            <FaPhoneAlt size={20} />
-            <span className="text-neutral-600">(612) 494-2350</span>
-          </li>
-        </ul>
-
-        <hr className="my-8 border-gray-200" />
-
+        <hr className="my-6 border-gray-200" />
         <div>
-          <h2 className="mt-4 text-lg md:text-xl font-medium text-neutral-700 leading-tight tracking-tight">
-            What Can We Help With?
-          </h2>
-          <div className="my-4 flex flex-col md:flex-row gap-x-4 gap-y-6">
+          <div className="my-4 flex flex-row gap-x-6 gap-y-6">
             <label className="inline-flex items-center">
               <input
                 type="checkbox"
                 checked={helpHiring}
                 onChange={() => handleOptionChange("hiring")}
-                className="accent-[#68C9FB] size-4 mr-2"
+                className="accent-[#68C9FB] rounded-md size-5 md:size-4 mr-2"
               />
               I need help hiring
             </label>
@@ -103,52 +87,139 @@ export default function ContactPage() {
                 type="checkbox"
                 checked={helpJob}
                 onChange={() => handleOptionChange("job")}
-                className="accent-[#68C9FB] size-4 mr-2"
+                className="accent-[#68C9FB] rounded-md  size-5 md:size-4 mr-2"
               />
               I am looking for a job
             </label>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <label className="block text-neutral-500 mb-1">Full Name</label>
+            <div className="mt-8">
+              <label className="block text-neutral-700 text-sm mb-1">
+                Full Name
+              </label>
               <input
                 type="text"
-                placeholder="Enter Name"
+                placeholder="John Doe"
                 value={fullName}
                 onChange={(e) => setFullName(e.target.value)}
                 required
-                className="w-full border border-neutral-200 bg-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300"
+                className="w-full border text-sm border-neutral-200 bg-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300"
               />
             </div>
             <div>
-              <label className="block text-neutral-500 mb-1">
+              <label className="block text-neutral-700 text-sm mb-1">
                 Email Address
               </label>
               <input
                 type="email"
-                placeholder="Enter Email"
+                placeholder="john@gmail.com"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
-                className="w-full border border-neutral-200 bg-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300"
+                className="w-full border text-sm border-neutral-200 bg-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300"
               />
             </div>
+            <div>
+              <label className="block text-neutral-700 text-sm mb-1">
+                Phone Number
+              </label>
+              <input
+                type="text"
+                placeholder="(123) 456-7890"
+                value={phoneNumber}
+                onChange={(e) => setPhoneNumber(e.target.value)}
+                required
+                className="w-full border text-sm border-neutral-200 bg-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300"
+              />
+            </div>
+            <div>
+              <label className="block text-neutral-700 text-sm mb-1">
+                What can we help with?
+              </label>
+              <textarea
+                placeholder="I need help recruiting..."
+                value={extraText}
+                onChange={(e) => setExtraText(e.target.value)}
+                required
+                className="w-full border text-sm border-neutral-200 bg-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300"
+              />
+            </div>
+            <div className="mb-6">
+              <label className="block text-neutral-700 text-sm mb-1">
+                Optional: Upload Your Resume (PDF or DOCX)
+              </label>
+              <div className="flex items-center space-x-4">
+                {/* hidden native input */}
+                <input
+                  id="resume-upload"
+                  type="file"
+                  accept=".pdf,.doc,.docx"
+                  onChange={(e) => setResumeFile(e.target.files?.[0] || null)}
+                  className="hidden"
+                />
+                {/* styled label as button */}
+                <label
+                  htmlFor="resume-upload"
+                  className="mt-2
+            inline-block
+        bg-white
+                  hover:bg-neutral-50
+                  text-neutral-800
+                  border
+                  border-neutral-300
+                  text-sm
+            px-4 
+            py-2 
+            rounded-md 
+            cursor-pointer
+            transition
+            duration-150
+          "
+                >
+                  Choose File
+                </label>
+                {/* filename display */}
+                <span className="text-gray-500 italic">
+                  {resumeFile?.name ?? "No file chosen"}
+                </span>
+              </div>
+            </div>
             <div className="mt-8">
-              <Button text="Let's work together" />
+              <Button text="Let's Work Together" />
             </div>
           </form>
         </div>
       </div>
 
-      {/* Right column: full-height image */}
-      <div className="mt-8 md:mt-0 md:w-1/2 h-64 md:h-auto relative rounded-lg overflow-hidden">
-        <Image
-          src="/contact-bg.jpg"
-          alt="Office workspace"
-          fill
-          className="object-cover"
-        />
+      {/* Right column: contact info + image */}
+      <div className="md:w-1/2 flex flex-col">
+        <hr className="mt-6 border-gray-200 flex md:hidden" />
+
+        <ul className="mt-6 text-sm space-y-3">
+          <li className="flex items-center gap-3">
+            <FaPhoneAlt size={16} />
+            <span className="text-neutral-600">(612) 494-2350</span>
+          </li>
+          <li className="flex items-center gap-3">
+            <MdEmail size={16} />
+            <span className="text-neutral-600">Adam@MNmfgRecruiting.com</span>
+          </li>
+          <li className="flex items-center gap-3">
+            <FaMapPin size={16} />
+            <span className="text-neutral-600">
+              710 N 4th Street, Minneapolis, MN 55401
+            </span>
+          </li>
+        </ul>
+        <div className="mt-8 hidden md:flex flex-1 relative rounded-lg overflow-hidden h-64 md:h-auto">
+          <Image
+            src="/contact-bg.jpg"
+            alt="Office workspace"
+            fill
+            className="object-cover"
+          />
+        </div>
       </div>
     </div>
   );

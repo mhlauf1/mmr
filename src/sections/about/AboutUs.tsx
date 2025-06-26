@@ -4,18 +4,18 @@ import Image from "next/image";
 const contentData = [
   {
     id: 0,
-    title: "Specializationn",
-    text: "Unlike most search firms that recruit across various sectors, we recruit exclusively for manufacturing. Having a niche enables us to develop deeper expertise and a more comprehensive understanding of the domain.",
+    title: "Specialization",
+    text: "Unlike most search firms that recruit across various sectors, we recruit exclusively for manufacturers vs. manufacturing. This niche enables us to develop deeper expertise and a more comprehensive understanding of the domain.",
   },
   {
     id: 1,
     title: "Local Talent Network",
-    text: "Based in Minneapolis, we specialize in recruiting talent across the Twin Cities and throughout Minnesota. As a result, our network consists of local manufacturing talent who often live within commuting distance of your facility.",
+    text: "Since we specialize in recruiting across the Twin Cities and throughout Minnesota, our extensive network already consists of local talent that lives within commuting distance of your facility.",
   },
   {
     id: 2,
     title: "Customer Experience",
-    text: "As a service provider, delivering exceptional customer service is our highest priority, for our clients and the candidates we work with. We recognize that a positive experience is as critical as finding the right candidate. Clear, consistent communication is at the heart of our approach. We keep all parties informed with regular updates, ensuring no one is left in the dark about how the search is progressing. Our team is available around the clock whenever you need us.",
+    text: "As a service provider, delivering exceptional customer service is our highest priority, for our clients and the candidates we work with. We recognize that a positive experience is as critical as finding the right candidate. Clear, consistent communication is at the heart of our approach. We keep all parties informed with regular updates, ensuring no one is left in the dark about how the search is progressing. Our team is available around the clock.",
   },
 ];
 
@@ -25,7 +25,7 @@ const AboutUs = () => {
       <div className="flex justify-between md:max-w-[90vw] md:min-h-[60vh] w-full mx-auto flex-col md:flex-row gap-16">
         <div className="flex items-start justify-between flex-1 flex-col">
           <div>
-            <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl md:max-w-[20ch] tracking-tight text-neutral-800 font-medium leading-tight">
+            <h2 className="text-neutral-900  text-3xl font-medium md:text-5xl leading-tight font-pt-serif tracking-tight mt-4 md:mt-4">
               Why Us?
             </h2>
 

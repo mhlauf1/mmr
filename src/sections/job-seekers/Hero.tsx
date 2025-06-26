@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
 
       {/* Content wrapper */}
       <div className="relative z-10 flex flex-col justify-end pb-16 md:pb-0 md:justify-center h-full px-4 md:px-[4%] lg:px-[5%]">
-        <div className="md:max-w-3xl flex-col justify-between">
+        <div className="md:max-w-2xl flex-col justify-between">
           <div>
             <span className="text-sm md:text-md bg-neutral-100/20 px-3 py-2 rounded-md font-semibold text-white">
               Job Seekers
@@ -60,8 +60,8 @@ const Hero: React.FC = () => {
               variants={textVariants}
               className="mt-4 text-white text-md md:text-lg"
             >
-              If you&rsquo;re exploring new opportunities in manufacturing,
-              you&rsquo;ve come to the right place. MN MFG Recruiting partners
+              If you&apos;re exploring new opportunities in manufacturing,
+              you&apos;ve come to the right place. MN MFG Recruiting partners
               with high performing manufacturers across the Twin Cities and
               throughout Minnesota.
             </motion.p>
@@ -89,7 +89,7 @@ const Hero: React.FC = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 className="flex-1  px-4 py-3 rounded-full bg-white text-neutral-800 placeholder-neutral-500 focus:outline-none"
               />
-              <Button text="Email your resume" />
+              <Button text="Email Your Resume" />
             </form>
           </motion.div>
         </div>

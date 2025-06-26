@@ -62,7 +62,7 @@ const HiringManagers = () => {
               </div>
             </div>
 
-            <Link href="/" className="mt-12">
+            <Link href="/hiring-managers" className="mt-12">
               <Button text="Hiring Managers Can Learn More" />
             </Link>
           </div>

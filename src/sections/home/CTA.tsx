@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@/components/Buttons";
+import Link from "next/link";
 
 const CTA = () => {
   return (
@@ -15,7 +16,9 @@ const CTA = () => {
             manufacturers. Delivering top-tier talent, backed by our free
             replacement guarantee.
           </p>
-          <Button text="Get started today" />
+          <Link className="w-full md:w-auto" href="/contact">
+            <Button text="Get Started Today" />
+          </Link>
         </div>
         <div className="hidden md:flex text-white mt-auto flex-row items-center gap-4">
           <span>Leadership placements</span>
@@ -25,70 +28,6 @@ const CTA = () => {
           <span>Local candidate network</span>
         </div>
       </div>
-
-      {/* speech blurbs */}
-      {/* blurb 1 */}
-      {/* <div className="absolute top-[8%] left-[15%]">
-        <div className="flex flex-row gap-1 items-center">
-          <div className="bg-neutral-100 text-sm text-neutral-900 font-medium rounded-full py-2 px-4">
-            I had 4 interviews in my first month using MMR!
-          </div>
-          <Image
-            className="rounded-full border-2 border-white"
-            src="/cta-person-1.png"
-            width={48}
-            height={48}
-            alt="CTA Text Image"
-          />
-        </div>
-      </div> */}
-      {/* blurb 2 */}
-      {/* <div className="absolute bottom-[15%] right-[5%]">
-        <div className="flex flex-row gap-1 items-center">
-          <Image
-            className="rounded-full border-2 border-white"
-            src="/cta-person-1.png"
-            width={48}
-            height={48}
-            alt="CTA Text Image"
-          />
-          <div className="bg-neutral-100 text-sm text-neutral-900  font-medium rounded-full py-2 px-4">
-            I can focus on my company and don&#39;t need to stress about top
-            talent
-          </div>
-        </div>
-      </div> */}
-      {/* blurb 3 */}
-      {/* <div className="absolute top-[10%] right-[12%]">
-        <div className="flex flex-row gap-1 items-center">
-          <Image
-            className="rounded-full border-2 border-white"
-            src="/cta-person-1.png"
-            width={48}
-            height={48}
-            alt="CTA Text Image"
-          />
-          <div className="bg-neutral-100 text-sm text-neutral-900  font-medium rounded-full py-2 px-4">
-            Best way to find top talent in today&#39;s market{" "}
-          </div>
-        </div>
-      </div> */}
-
-      {/* blurb 5 */}
-      {/* <div className="absolute bottom-[18%] left-[10%]">
-        <div className="flex flex-row gap-1 items-center">
-          <Image
-            className="rounded-full border-2 border-white"
-            src="/cta-person-1.png"
-            width={48}
-            height={48}
-            alt="CTA Text Image"
-          />
-          <div className="bg-neutral-100 text-sm text-neutral-900 font-medium rounded-full py-2 px-4">
-            I found a manufacturing job in 2 weeks!
-          </div>
-        </div>
-      </div> */}
     </section>
   );
 };

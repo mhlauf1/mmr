@@ -4,18 +4,18 @@ import Image from "next/image";
 const contentData = [
   {
     id: 0,
-    title: "Engineering",
-    text: "Controls • Electrical • Industrial • Manufacturing • Mechanical • Process • Quality",
+    title: "Operations Leadership",
+    text: "Production Manager • Manufacturing Manager • Plant Manager • Operations Manager/Director/VP • General Manager",
   },
   {
     id: 1,
-    title: "Operations Leadership",
-    text: "Production Supervisor • Production Manager • Plant Manager • Operations Manager • Director of Operations • VP of Operations • General Manager",
+    title: "Additional Leadership",
+    text: "Engineering Manager/Director/VP • Quality Manager/Director/VP • EHS Leader • Facilities/Maintenance Leader",
   },
   {
     id: 2,
-    title: "Additional Leadership",
-    text: "Engineering Manager/Director/VP • Quality Manager/Director/VP • EHS Leader • Facilities/Maintenance Leader",
+    title: "Engineering",
+    text: "Controls • Electrical • Industrial • Manufacturing • Mechanical • Process • Quality",
   },
   {
     id: 3,
@@ -43,9 +43,10 @@ const Core = () => {
 
           {/* Content */}
           <div className="w-full md:w-1/2 flex flex-col justify-start">
-            <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl md:max-w-[18ch] font-medium text-neutral-100 leading-tight">
+            <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl text-center md:text-start font-medium text-white leading-tight font-pt-serif   tracking-tight">
               Core Recruiting
-              <span className="block font-pt-serif italic tracking-tight">
+              <span className="font-pt-serif italic tracking-tight">
+                {" "}
                 Capabilities
               </span>
             </h2>

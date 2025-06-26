@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const contentData = [
   {
@@ -47,7 +48,9 @@ const JobSeekers = () => {
           </div>
           <p className="text-neutral-800 mt-8 md:mt-16 md:max-w-xl text-md md:text-lg">
             Ready to take the next step?{" "}
-            <span className="underline">Send us your resume today.</span>
+            <Link href="/contact">
+              <span className="underline">Send us your resume today.</span>
+            </Link>
           </p>
         </div>
 

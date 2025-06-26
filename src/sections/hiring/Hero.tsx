@@ -36,7 +36,7 @@ const Hero = () => {
               <div className="max-w-3xl">
                 {/* Heading with subtle left animation */}
                 <span className="text-sm md:text-md bg-neutral-100/20 px-3 py-2 rounded-md font-semibold text-white">
-                  For Employees
+                  Hiring Managers
                 </span>
                 <motion.h1
                   custom={0}
@@ -70,7 +70,7 @@ const Hero = () => {
                   className="flex flex-col md:flex-row gap-4 pt-6 md:pt-8"
                 >
                   <Link className="w-full md:w-auto " href="/contact">
-                    <ButtonWhite text="I need help hiring" />
+                    <ButtonWhite text="I Need Help Hiring" />
                   </Link>
                 </motion.div>
               </div>

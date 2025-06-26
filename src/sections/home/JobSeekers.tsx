@@ -49,7 +49,7 @@ const JobSeekers = () => {
             </div>
           </div>
 
-          <Link href="/" className="mt-12 w-full">
+          <Link href="/job-seekers" className="mt-12 w-full">
             <Button text="Job Seekers Can Learn More" />
           </Link>
         </div>

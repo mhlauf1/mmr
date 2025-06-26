@@ -31,6 +31,7 @@ const Hero = () => {
             className="object-cover -z-10"
           />
         </div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/30 to-transparent -z-0" />
 
         <div className="relative z-10 h-full pt-16 md:pt-0 flex flex-col justify-center">
           <div className="flex flex-row px-4 md:px-[4%] lg:px-[5%] w-full">
@@ -73,7 +74,7 @@ const Hero = () => {
                   initial="hidden"
                   animate="visible"
                   variants={textVariants}
-                  className="mt-6 md:mt-4 text-white md:max-w-[50ch] text-center md:text-start text-md md:text-lg"
+                  className="mt-6 md:mt-4 text-white  md:max-w-[62ch] text-center md:text-start text-md md:text-lg"
                 >
                   Direct hire placement services for manufacturers in Minnesota.
                   Delivering top-tier leadership and professional level talent,
@@ -90,13 +91,13 @@ const Hero = () => {
                     className="w-full flex  justify-center md:justify-start  md:w-auto"
                     href="/hiring-managers"
                   >
-                    <Button text="I need help hiring" />
+                    <Button text="I Need Help Hiring" />
                   </Link>
                   <Link
                     className="w-full flex justify-center md:justify-start md:w-auto "
                     href="/job-seekers"
                   >
-                    <ButtonWhite text="I’m looking for a job" />
+                    <ButtonWhite text="I’m Looking For a Job" />
                   </Link>
                 </motion.div>
               </div>

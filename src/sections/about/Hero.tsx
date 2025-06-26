@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
 
       {/* Content wrapper */}
       <div className="relative z-10 flex flex-col  justify-end pb-16 md:pb-0 md:justify-end h-full px-4 md:px-[4%] lg:px-[5%]">
-        <div className="md:max-w-3xl flex-col md:h-[60vh] justify-between">
+        <div className=" flex-col md:h-[60vh] justify-between">
           <div>
             <span className="text-sm md:text-md bg-neutral-100/20 px-3 py-2 rounded-md font-semibold text-white">
               About Us
@@ -39,9 +39,9 @@ const Hero: React.FC = () => {
               initial="hidden"
               animate="visible"
               variants={textVariants}
-              className="mt-4 text-3xl md:text-5xl lg:text-7xl font-normal text-white tracking-tight"
+              className="mt-4 text-4xl md:text-5xl lg:text-7xl font-normal text-white font-pt-serif tracking-tight"
             >
-              What Sets Us Apart
+              Minnesota Manufacturing Recruiting
             </motion.h1>
 
             <motion.p
@@ -49,11 +49,12 @@ const Hero: React.FC = () => {
               initial="hidden"
               animate="visible"
               variants={textVariants}
-              className="mt-4 text-white text-md md:text-lg"
+              className="mt-4 md:max-w-2xl text-white text-md md:text-lg"
             >
-              We specialize in full-time, permanent placements and do not work
-              on any contract or contract to hire positions. We recruit for
-              mid-senior level individual contributor and leadership positions.
+              A Minneapolis based search firm providing direct hire placement
+              services for manufacturers throughout the state. We recruit
+              leaders and professional level talent, backed by a strong local
+              network and a free replacement guarantee.
             </motion.p>
           </div>
 
@@ -69,14 +70,12 @@ const Hero: React.FC = () => {
               initial="hidden"
               animate="visible"
               variants={textVariants}
-              className="mt-4 text-white text-md md:text-lg"
+              className="mt-4 md:max-w-2xl text-white text-md md:text-lg"
             >
-              We understand that an impressive interview does not always
-              translate to a new hire being the right fit. That&#39;s why we
-              provide a free replacement guarantee to all clients in the event a
-              candidate doesn&#39;t work out.
+              Our focused, high-touch approach is why we&apos;re a trusted
+              partner for many manufacturers in Minnesota.
             </motion.p>
-            <Button text="Let’s work together" />
+            <Button text="Let’s Work Together" />
           </motion.div>
         </div>
       </div>
