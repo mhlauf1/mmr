@@ -185,7 +185,7 @@ const BottomCTA: React.FC = () => {
 
           {/* Submit */}
           <div className="mt-4">
-            <Button text="Email Resume" />
+            <Button text="Get in Touch" />
           </div>
         </form>
       </div>

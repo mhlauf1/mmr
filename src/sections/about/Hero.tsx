@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { Button } from "@/components/Buttons";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Hero: React.FC = () => {
   const textVariants = {
@@ -75,7 +76,9 @@ const Hero: React.FC = () => {
               Our focused, high-touch approach is why we&apos;re a trusted
               partner for many manufacturers in Minnesota.
             </motion.p>
-            <Button text="Let’s Work Together" />
+            <Link href="/contact" className="w-full md:w-auto">
+              <Button text="Let’s Work Together" />
+            </Link>
           </motion.div>
         </div>
       </div>
