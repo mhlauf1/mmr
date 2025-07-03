@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
@@ -15,44 +16,64 @@ export default function ContactPage() {
   const [extraText, setExtraText] = useState("");
   const [resumeFile, setResumeFile] = useState<File | null>(null);
 
+  const [submitting, setSubmitting] = useState(false);
+  const [success, setSuccess] = useState(false);
+
   const textVariants = {
     hidden: { opacity: 0, x: -10 },
     visible: (i: number) => ({
       opacity: 1,
       x: 0,
-      transition: {
-        delay: 0.1 + i * 0.1,
-        duration: 0.5,
-        ease: "easeOut",
-      },
+      transition: { delay: 0.1 + i * 0.1, duration: 0.5, ease: "easeOut" },
     }),
   };
 
   const handleOptionChange = (option: "hiring" | "job") => {
-    if (option === "hiring") {
-      setHelpHiring(true);
-      setHelpJob(false);
-    } else {
-      setHelpJob(true);
-      setHelpHiring(false);
-    }
+    setHelpHiring(option === "hiring");
+    setHelpJob(option === "job");
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!helpHiring && !helpJob) {
-      alert("Please select whether you need help hiring or looking for a job.");
-      return;
+      return alert(
+        "Please select whether you need help hiring or looking for a job."
+      );
     }
-    console.log({
-      helpHiring,
-      helpJob,
-      fullName,
-      email,
-      phoneNumber,
-      extraText,
-      resumeFile,
-    });
+
+    setSubmitting(true);
+    try {
+      const formData = new FormData();
+      formData.append("helpHiring", String(helpHiring));
+      formData.append("helpJob", String(helpJob));
+      formData.append("fullName", fullName);
+      formData.append("email", email);
+      formData.append("phoneNumber", phoneNumber);
+      formData.append("extraText", extraText);
+      if (resumeFile) {
+        formData.append("resume", resumeFile, resumeFile.name);
+      }
+
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (!res.ok) throw new Error(`Error ${res.status}`);
+      setSuccess(true);
+      setHelpHiring(false);
+      setHelpJob(false);
+      setFullName("");
+      setEmail("");
+      setPhoneNumber("");
+      setExtraText("");
+      setResumeFile(null);
+    } catch (err) {
+      console.error(err);
+      alert("Oops! Something went wrong.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -71,125 +92,114 @@ export default function ContactPage() {
           </span>
         </motion.h1>
         <hr className="my-6 border-gray-200" />
-        <div>
-          <div className="my-4 flex flex-row gap-x-6 gap-y-6">
-            <label className="inline-flex items-center">
-              <input
-                type="checkbox"
-                checked={helpHiring}
-                onChange={() => handleOptionChange("hiring")}
-                className="accent-[#68C9FB] rounded-md size-5 md:size-4 mr-2"
-              />
-              I need help hiring
+
+        {success && (
+          <div className="bg-green-100 text-green-800 p-4 rounded-lg mb-6">
+            Thanks for reaching out! We’ll be in touch soon.
+          </div>
+        )}
+
+        <div className="my-4 flex flex-row gap-x-6 gap-y-6">
+          <label className="inline-flex items-center">
+            <input
+              type="checkbox"
+              checked={helpHiring}
+              onChange={() => handleOptionChange("hiring")}
+              className="accent-[#68C9FB] rounded-md size-5 md:size-4 mr-2"
+            />
+            I need help hiring
+          </label>
+          <label className="inline-flex items-center">
+            <input
+              type="checkbox"
+              checked={helpJob}
+              onChange={() => handleOptionChange("job")}
+              className="accent-[#68C9FB] rounded-md  size-5 md:size-4 mr-2"
+            />
+            I am looking for a job
+          </label>
+        </div>
+
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div>
+            <label className="block text-neutral-700 text-sm mb-1">
+              Full Name
             </label>
-            <label className="inline-flex items-center">
-              <input
-                type="checkbox"
-                checked={helpJob}
-                onChange={() => handleOptionChange("job")}
-                className="accent-[#68C9FB] rounded-md  size-5 md:size-4 mr-2"
-              />
-              I am looking for a job
+            <input
+              type="text"
+              placeholder="John Doe"
+              required
+              value={fullName}
+              onChange={(e) => setFullName(e.target.value)}
+              className="w-full border text-sm border-neutral-200 bg-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300"
+            />
+          </div>
+          <div>
+            <label className="block text-neutral-700 text-sm mb-1">
+              Email Address
             </label>
+            <input
+              type="email"
+              placeholder="john@gmail.com"
+              required
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full border text-sm border-neutral-200 bg-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300"
+            />
+          </div>
+          <div>
+            <label className="block text-neutral-700 text-sm mb-1">
+              Phone Number
+            </label>
+            <input
+              type="text"
+              placeholder="(123) 456-7890"
+              required
+              value={phoneNumber}
+              onChange={(e) => setPhoneNumber(e.target.value)}
+              className="w-full border text-sm border-neutral-200 bg-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300"
+            />
+          </div>
+          <div>
+            <label className="block text-neutral-700 text-sm mb-1">
+              What can we help with?
+            </label>
+            <textarea
+              placeholder="I need help recruiting..."
+              required
+              value={extraText}
+              onChange={(e) => setExtraText(e.target.value)}
+              className="w-full border text-sm border-neutral-200 bg-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300"
+            />
+          </div>
+          <div className="mb-6">
+            <label className="block text-neutral-700 text-sm mb-1">
+              Optional: Upload Your Resume (PDF or DOCX)
+            </label>
+            <div className="flex items-center space-x-4">
+              <input
+                id="resume-upload"
+                type="file"
+                accept=".pdf,.doc,.docx"
+                onChange={(e) => setResumeFile(e.target.files?.[0] || null)}
+                className="hidden"
+              />
+              <label
+                htmlFor="resume-upload"
+                className="inline-block bg-white hover:bg-neutral-50 text-neutral-800 border border-neutral-300 text-sm px-4 py-2 rounded-md cursor-pointer transition duration-150"
+              >
+                Choose File
+              </label>
+              <span className="text-gray-500 italic">
+                {resumeFile?.name ?? "No file chosen"}
+              </span>
+            </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="mt-8">
-              <label className="block text-neutral-700 text-sm mb-1">
-                Full Name
-              </label>
-              <input
-                type="text"
-                placeholder="John Doe"
-                value={fullName}
-                onChange={(e) => setFullName(e.target.value)}
-                required
-                className="w-full border text-sm border-neutral-200 bg-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300"
-              />
-            </div>
-            <div>
-              <label className="block text-neutral-700 text-sm mb-1">
-                Email Address
-              </label>
-              <input
-                type="email"
-                placeholder="john@gmail.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className="w-full border text-sm border-neutral-200 bg-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300"
-              />
-            </div>
-            <div>
-              <label className="block text-neutral-700 text-sm mb-1">
-                Phone Number
-              </label>
-              <input
-                type="text"
-                placeholder="(123) 456-7890"
-                value={phoneNumber}
-                onChange={(e) => setPhoneNumber(e.target.value)}
-                required
-                className="w-full border text-sm border-neutral-200 bg-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300"
-              />
-            </div>
-            <div>
-              <label className="block text-neutral-700 text-sm mb-1">
-                What can we help with?
-              </label>
-              <textarea
-                placeholder="I need help recruiting..."
-                value={extraText}
-                onChange={(e) => setExtraText(e.target.value)}
-                required
-                className="w-full border text-sm border-neutral-200 bg-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300"
-              />
-            </div>
-            <div className="mb-6">
-              <label className="block text-neutral-700 text-sm mb-1">
-                Optional: Upload Your Resume (PDF or DOCX)
-              </label>
-              <div className="flex items-center space-x-4">
-                {/* hidden native input */}
-                <input
-                  id="resume-upload"
-                  type="file"
-                  accept=".pdf,.doc,.docx"
-                  onChange={(e) => setResumeFile(e.target.files?.[0] || null)}
-                  className="hidden"
-                />
-                {/* styled label as button */}
-                <label
-                  htmlFor="resume-upload"
-                  className="
-            inline-block
-        bg-white
-                  hover:bg-neutral-50
-                  text-neutral-800
-                  border
-                  border-neutral-300
-                  text-sm
-            px-4 
-            py-2 
-            rounded-md 
-            cursor-pointer
-            transition
-            duration-150
-          "
-                >
-                  Choose File
-                </label>
-                {/* filename display */}
-                <span className="text-gray-500 italic">
-                  {resumeFile?.name ?? "No file chosen"}
-                </span>
-              </div>
-            </div>
-            <div className="mt-8">
-              <Button text="Let's Work Together" />
-            </div>
-          </form>
-        </div>
+          <div className="mt-8">
+            <Button text={submitting ? "Submitting…" : "Let's Work Together"} />
+          </div>
+        </form>
       </div>
 
       {/* Right column: contact info + image */}
