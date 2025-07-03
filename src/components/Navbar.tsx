@@ -14,13 +14,13 @@ const NAV_ITEMS = [
 const NAV_ITEMS_MOBILE = [{ label: "Home", href: "/" }, ...NAV_ITEMS];
 
 export default function Navbar() {
-  const pathname = usePathname();
+  // usePathname can return null, so default to empty string
+  const pathname = usePathname() ?? "";
   const onContact = pathname === "/contact";
 
-  // Only track scroll on “home”-type pages
-  const isHome = ["/", "/job-seekers", "/hiring-managers", "/about"].includes(
-    pathname
-  );
+  // Only track scroll on "home"-type pages
+  const homePaths = ["/", "/job-seekers", "/hiring-managers", "/about"];
+  const isHome = homePaths.includes(pathname);
 
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -32,10 +32,10 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [isHome]);
 
-  // Transparent if on a “home” page AND not scrolled
+  // Transparent if on a "home" page AND not scrolled
   const isTransparent = isHome && !scrolled;
 
-  // Force dark text on Contact
+  // Force dark text on Contact or when menu is open
   const useDarkText = onContact || !isTransparent || menuOpen;
 
   return (
@@ -46,14 +46,14 @@ export default function Navbar() {
           : "bg-transparent text-white"
       }`}
     >
-      <div className=" px-4 md:px-[4%] lg:px-[5%]">
+      <div className="px-4 md:px-[4%] lg:px-[5%]">
         <div className="flex items-center justify-between p-2">
           {/* Logo */}
           <Link
             href="/"
-            className={`flex flex-row items-center gap-[10px]
-            ${!useDarkText ? "filter brightness-0 invert" : ""}
-            `}
+            className={`flex flex-row items-center gap-[10px] ${
+              !useDarkText ? "filter brightness-0 invert" : ""
+            }`}
           >
             <Image
               src="/minnesota.svg"
