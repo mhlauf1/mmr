@@ -40,7 +40,6 @@ export default async function handler(
         const { fields, files } = await parseForm(req);
         const {
             helpHiring = "false",
-            helpJob = "false",
             fullName,
             email,
             phoneNumber,
