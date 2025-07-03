@@ -53,9 +53,11 @@ const Testimonial: React.FC<TestimonialProps> = ({
       <button
         onClick={prev}
         aria-label="Previous testimonial"
-        className="p-2 rounded-full bg-white border border-neutral-200 hover:border-neutral-300 duration-300"
+        className="p-2 cursor-pointer group rounded-full bg-white border border-neutral-200 hover:border-neutral-300 duration-300"
       >
-        <ArrowLeft className="text-neutral-600" />
+        <div className="transition-transform group-hover:translate-x-[-2px]">
+          <ArrowLeft className="text-neutral-600" />
+        </div>
       </button>
       <span className="text-neutral-600 font-medium">
         {index + 1}/{total}
@@ -63,9 +65,11 @@ const Testimonial: React.FC<TestimonialProps> = ({
       <button
         onClick={next}
         aria-label="Next testimonial"
-        className="p-2 rounded-full bg-white border border-neutral-200 hover:border-neutral-300 duration-300"
+        className="p-2 cursor-pointer group rounded-full bg-white border border-neutral-200 hover:border-neutral-300 duration-300"
       >
-        <ArrowRight className="text-neutral-600" />
+        <div className="transition-transform group-hover:translate-x-[2px]">
+          <ArrowRight className="text-neutral-600" />
+        </div>
       </button>
     </div>
   </div>

@@ -73,7 +73,7 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="transition-colors duration-200 hover:text-gray-300"
+                className={`transition-colors duration-200 ${scrolled ? "hover:text-gray-500" : "hover:text-gray-200"} `}
               >
                 {item.label}
               </Link>

@@ -52,9 +52,11 @@ const Hero = () => {
                     </span>
 
                     {/* always visible */}
-                    <span className="inline-flex items-center whitespace-nowrap bg-white text-[#202023] rounded-full px-3 py-2  gap-1 md:ml-3">
+                    <span className="inline-flex group  hover:bg-white/90 duration-300 items-center whitespace-nowrap bg-white text-[#202023] rounded-full px-3 py-2  gap-1 md:ml-3">
                       Read Client Reviews
-                      <ArrowUpRight size={16} strokeWidth={2} />
+                      <div className="transition-transform group-hover:translate-x-[2px] group-hover:translate-y-[-2px]">
+                        <ArrowUpRight size={16} strokeWidth={2} />
+                      </div>
                     </span>
                   </button>
                 </Link>
