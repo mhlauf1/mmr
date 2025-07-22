@@ -7,9 +7,11 @@ const BottomCTA: React.FC = () => {
   const [seekerEmail, setSeekerEmail] = useState("");
   const [seekerPhone, setSeekerPhone] = useState("");
   const [resumeFile, setResumeFile] = useState<File | null>(null);
+  const [additionalTextSeeker, setAdditionalTextSeeker] = useState("");
 
   const [employerName, setEmployerName] = useState("");
   const [employerCompany, setEmployerCompany] = useState("");
+  const [employerPhone, setEmployerPhone] = useState("");
   const [employerEmail, setEmployerEmail] = useState("");
   const [additionalText, setAdditionalText] = useState("");
 
@@ -70,6 +72,14 @@ const BottomCTA: React.FC = () => {
             onChange={(e) => setEmployerEmail(e.target.value)}
             className="w-full px-4 py-3 border border-neutral-300 bg-white rounded-md focus:outline-none"
           />
+          <input
+            type="tel"
+            required
+            placeholder="Phone Number"
+            value={employerPhone}
+            onChange={(e) => setEmployerPhone(e.target.value)}
+            className="w-full px-4 py-3 border border-neutral-300 bg-white rounded-md focus:outline-none"
+          />
           <textarea
             required
             placeholder="How can we help?"
@@ -96,7 +106,6 @@ const BottomCTA: React.FC = () => {
             job search.
           </p>
         </div>
-
         <form onSubmit={submitSeeker} className="space-y-4 mt-8">
           {/* Full Name */}
           <div>
@@ -143,6 +152,15 @@ const BottomCTA: React.FC = () => {
             />
           </div>
 
+          <div>
+            <textarea
+              required
+              placeholder="How can we help?"
+              value={additionalText}
+              onChange={(e) => setAdditionalText(e.target.value)}
+              className="w-full px-4 py-3 border border-neutral-300 bg-white rounded-md focus:outline-none"
+            />
+          </div>
           {/* Optional Resume Upload */}
           <div>
             <label className="block text-neutral-700 text-sm mb-1">
