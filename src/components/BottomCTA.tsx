@@ -156,8 +156,8 @@ const BottomCTA: React.FC = () => {
             <textarea
               required
               placeholder="How can we help?"
-              value={additionalText}
-              onChange={(e) => setAdditionalText(e.target.value)}
+              value={additionalTextSeeker}
+              onChange={(e) => setAdditionalTextSeeker(e.target.value)}
               className="w-full px-4 py-3 border border-neutral-300 bg-white rounded-md focus:outline-none"
             />
           </div>
