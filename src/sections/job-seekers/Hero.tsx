@@ -1,5 +1,4 @@
 "use client";
-import React, { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/Buttons";
 import { motion } from "framer-motion";
@@ -17,13 +16,6 @@ const Hero: React.FC = () => {
         ease: "easeOut",
       },
     }),
-  };
-
-  const [email, setEmail] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Resume request for:", email);
   };
 
   return (
