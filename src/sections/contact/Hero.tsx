@@ -64,7 +64,7 @@ export default function ContactPage() {
               type="checkbox"
               checked={helpHiring}
               onChange={() => handleOptionChange("hiring")}
-              className="accent-[#68C9FB] rounded-md size-5 md:size-4 mr-2"
+              className="accent-[#68C9FB] rounded-md size-5 mr-2"
             />
             I need help hiring
           </label>
@@ -73,7 +73,7 @@ export default function ContactPage() {
               type="checkbox"
               checked={helpJob}
               onChange={() => handleOptionChange("job")}
-              className="accent-[#68C9FB] rounded-md size-5 md:size-4 mr-2"
+              className="accent-[#68C9FB] rounded-md size-5 mr-2"
             />
             I am looking for a job
           </label>
@@ -96,7 +96,7 @@ export default function ContactPage() {
               required
               value={fullName}
               onChange={(e) => setFullName(e.target.value)}
-              className="w-full border text-sm border-neutral-200 bg-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300"
+              className="w-full border text-sm border-neutral-200 bg-white rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-300"
             />
             <ValidationError
               prefix="Full Name"
@@ -115,7 +115,7 @@ export default function ContactPage() {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full border text-sm border-neutral-200 bg-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300"
+              className="w-full border text-sm border-neutral-200 bg-white rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-300"
             />
             <ValidationError
               prefix="Email"
@@ -133,7 +133,7 @@ export default function ContactPage() {
               placeholder="(123) 456-7890"
               value={phoneNumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
-              className="w-full border text-sm border-neutral-200 bg-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300"
+              className="w-full border text-sm border-neutral-200 bg-white rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-300"
             />
             <ValidationError
               prefix="Phone Number"
@@ -151,7 +151,7 @@ export default function ContactPage() {
               required
               value={extraText}
               onChange={(e) => setExtraText(e.target.value)}
-              className="w-full border text-sm border-neutral-200 bg-white rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-300"
+              className="w-full border text-sm border-neutral-200 bg-white rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-300"
             />
             <ValidationError
               prefix="Message"
