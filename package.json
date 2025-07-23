@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formspree/react": "^3.0.0",
     "formidable": "^3.5.4",
     "framer-motion": "^12.5.0",
     "lucide-react": "^0.511.0",
