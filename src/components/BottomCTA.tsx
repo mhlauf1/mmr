@@ -36,7 +36,7 @@ const BottomCTA: React.FC = () => {
         <span className="inline-block text-sm bg-neutral-100 px-3 py-2 rounded-md font-semibold text-neutral-700 mb-8">
           Hiring Managers
         </span>
-        <h2 className="text-neutral-100 text-3xl md:text-4xl lg:text-5xl leading-tight font-pt-serif tracking-tight mb-4">
+        <h2 className="text-neutral-100 text-3xl  lg:text-[3vw] leading-tight font-pt-serif tracking-tight mb-4">
           Find <span className="italic">Manufacturing Talent.</span>
         </h2>
 
@@ -159,7 +159,7 @@ const BottomCTA: React.FC = () => {
           <span className="inline-block text-sm bg-neutral-100 px-3 py-3 rounded-md font-semibold text-neutral-700 mb-6">
             Job Seekers
           </span>
-          <h2 className="text-neutral-900 text-3xl md:text-4xl lg:text-5xl leading-tight font-pt-serif tracking-tight">
+          <h2 className="text-neutral-900 text-3xl  lg:text-[3vw] leading-tight font-pt-serif tracking-tight">
             Start Your <span className="italic">Job Search.</span>
           </h2>
           {seekerSucceeded && (
