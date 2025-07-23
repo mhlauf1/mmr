@@ -49,7 +49,7 @@ const JobSeekers = () => {
           <p className="text-neutral-800 mt-8 md:mt-16 md:max-w-xl text-md md:text-lg">
             Ready to take the next step?{" "}
             <Link href="/contact">
-              <span className="underline">Send us your resume today.</span>
+              <span className="underline">Reach out today.</span>
             </Link>
           </p>
         </div>

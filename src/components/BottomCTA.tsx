@@ -37,7 +37,7 @@ const BottomCTA: React.FC = () => {
           Hiring Managers
         </span>
         <h2 className="text-neutral-100 text-3xl md:text-4xl lg:text-5xl leading-tight font-pt-serif tracking-tight mb-4">
-          Find Top <span className="italic">Manufacturing Talent.</span>
+          Find <span className="italic">Manufacturing Talent.</span>
         </h2>
 
         {employerSucceeded && (
@@ -214,7 +214,7 @@ const BottomCTA: React.FC = () => {
           </div>
           <div>
             <label className="block text-neutral-700 text-sm mb-1">
-              Job Position
+              Position
             </label>
             <input
               name="seekerPosition"

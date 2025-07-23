@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { Button } from "@/components/Buttons";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const Hero: React.FC = () => {
   const textVariants = {
@@ -74,23 +75,9 @@ const Hero: React.FC = () => {
             variants={textVariants}
             className="mt-4 space-y-6"
           >
-            <p className="text-white/90 text-md md:text-lg">
-              Send us your resume to begin your job search today!
-            </p>
-            <form
-              className="flex flex-col md:flex-row gap-3 max-w-lg"
-              onSubmit={handleSubmit}
-            >
-              <input
-                type="email"
-                required
-                placeholder="Enter your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="flex-1  px-4 py-3 rounded-full bg-white text-neutral-800 placeholder-neutral-500 focus:outline-none"
-              />
+            <Link href="contact">
               <Button text="Get in Touch" />
-            </form>
+            </Link>
           </motion.div>
         </div>
       </div>
