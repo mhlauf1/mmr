@@ -51,7 +51,7 @@ export default function ContactPage() {
   };
 
   return (
-    <div className="px-4 py-[8vh] md:py-[15vh] md:min-h-[90vh] md:pb-[7vh] md:px-[6%] md:flex md:space-x-12">
+    <div className="px-4 py-[12vh] md:py-[15vh] md:min-h-[90vh] md:pb-[7vh] md:px-[6%] md:flex md:space-x-12">
       {/* Left column */}
       <div className="md:w-1/2">
         <motion.h1
