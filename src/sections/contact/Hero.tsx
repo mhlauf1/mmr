@@ -39,7 +39,7 @@ export default function ContactPage() {
     setFormError(null);
   };
 
-  const onSubmit = (e: React.FormEvent) => {
+  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!helpHiring && !helpJob) {
       setFormError(
