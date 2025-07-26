@@ -152,7 +152,6 @@ const BottomCTA: React.FC = () => {
           />
         </form>
       </div>
-
       {/* Job Seekers */}
       <div className="flex flex-col h-auto p-6 md:p-8 bg-neutral-50 border border-neutral-200 md:rounded-xl">
         <div>
@@ -168,11 +167,9 @@ const BottomCTA: React.FC = () => {
             </div>
           )}
         </div>
-
         <form onSubmit={handleSeekerSubmit} className="space-y-4 mt-6">
           {/* honeypot */}
           <input type="text" name="_gotcha" style={{ display: "none" }} />
-
           <div>
             <label className="block text-neutral-700 text-sm mb-1">
               Full Name
