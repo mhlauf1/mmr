@@ -9,7 +9,7 @@ import { MdEmail } from "react-icons/md";
 import { useForm, ValidationError } from "@formspree/react";
 
 export default function ContactPage() {
-  const [helpHiring, setHelpHiring] = useState(false);
+  const [helpHiring, setHelpHiring] = useState(true);
   const [helpJob, setHelpJob] = useState(false);
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
